@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:petrinet="http://petrinet">
+  <petrinet:PetriNet name="Programmation"/>
+  <petrinet:Place name="Concevoir_NotStarted" petri="/0" jeton="1"/>
+  <petrinet:Transition name="Concevoir_start" petri="/0"/>
+  <petrinet:Place name="Concevoir_Started" petri="/0"/>
+  <petrinet:Place name="Concevoir_Running" petri="/0"/>
+  <petrinet:Transition name="Concevoir_finish" petri="/0"/>
+  <petrinet:Place name="Concevoir_Finished" petri="/0"/>
+  <petrinet:Arc weight="1" source="/1" target="/2" petri="/0"/>
+  <petrinet:Arc weight="1" source="/2" target="/3" direction="transitionToPlace" petri="/0"/>
+  <petrinet:Arc weight="1" source="/2" target="/4" direction="transitionToPlace" petri="/0"/>
+  <petrinet:Arc weight="1" source="/4" target="/5" petri="/0"/>
+  <petrinet:Arc weight="1" source="/5" target="/6" direction="transitionToPlace" petri="/0"/>
+  <petrinet:Place name="Programmer_NotStarted" petri="/0" jeton="1"/>
+  <petrinet:Transition name="Programmer_start" petri="/0"/>
+  <petrinet:Place name="Programmer_Started" petri="/0"/>
+  <petrinet:Place name="Programmer_Running" petri="/0"/>
+  <petrinet:Transition name="Programmer_finish" petri="/0"/>
+  <petrinet:Place name="Programmer_Finished" petri="/0"/>
+  <petrinet:Arc weight="1" source="/12" target="/13" petri="/0"/>
+  <petrinet:Arc weight="1" source="/13" target="/14" direction="transitionToPlace" petri="/0"/>
+  <petrinet:Arc weight="1" source="/13" target="/15" direction="transitionToPlace" petri="/0"/>
+  <petrinet:Arc weight="1" source="/15" target="/16" petri="/0"/>
+  <petrinet:Arc weight="1" source="/16" target="/17" direction="transitionToPlace" petri="/0"/>
+  <petrinet:Place name="Documenter_NotStarted" petri="/0" jeton="1"/>
+  <petrinet:Transition name="Documenter_start" petri="/0"/>
+  <petrinet:Place name="Documenter_Started" petri="/0"/>
+  <petrinet:Place name="Documenter_Running" petri="/0"/>
+  <petrinet:Transition name="Documenter_finish" petri="/0"/>
+  <petrinet:Place name="Documenter_Finished" petri="/0"/>
+  <petrinet:Arc weight="1" source="/23" target="/24" petri="/0"/>
+  <petrinet:Arc weight="1" source="/24" target="/25" direction="transitionToPlace" petri="/0"/>
+  <petrinet:Arc weight="1" source="/24" target="/26" direction="transitionToPlace" petri="/0"/>
+  <petrinet:Arc weight="1" source="/26" target="/27" petri="/0"/>
+  <petrinet:Arc weight="1" source="/27" target="/28" direction="transitionToPlace" petri="/0"/>
+  <petrinet:Place name="Tester_NotStarted" petri="/0" jeton="1"/>
+  <petrinet:Transition name="Tester_start" petri="/0"/>
+  <petrinet:Place name="Tester_Started" petri="/0"/>
+  <petrinet:Place name="Tester_Running" petri="/0"/>
+  <petrinet:Transition name="Tester_finish" petri="/0"/>
+  <petrinet:Place name="Tester_Finished" petri="/0"/>
+  <petrinet:Arc weight="1" source="/34" target="/35" petri="/0"/>
+  <petrinet:Arc weight="1" source="/35" target="/36" direction="transitionToPlace" petri="/0"/>
+  <petrinet:Arc weight="1" source="/35" target="/37" direction="transitionToPlace" petri="/0"/>
+  <petrinet:Arc weight="1" source="/37" target="/38" petri="/0"/>
+  <petrinet:Arc weight="1" source="/38" target="/39" direction="transitionToPlace" petri="/0"/>
+  <petrinet:Arc weight="1" kind="read" target="/13"/>
+  <petrinet:Arc weight="1" kind="read" target="/35"/>
+  <petrinet:Arc weight="1" kind="read" target="/38"/>
+  <petrinet:Arc weight="1" kind="read" target="/24"/>
+  <petrinet:Arc weight="1" kind="read" target="/27"/>
+  <petrinet:Arc weight="1" kind="read" target="/38"/>
+</xmi:XMI>

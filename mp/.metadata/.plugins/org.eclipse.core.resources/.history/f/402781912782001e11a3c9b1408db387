@@ -1,0 +1,53 @@
+-- @path SimplePDL=/fr.n7.simplePDL/SimplePDL.ecore
+-- @path PetriNet=/fr.n7.petriNet/PetriNet.ecore
+
+module simplepdl2petrinet;
+create OUT : PetriNet from IN : SimplePDL;
+
+rule Process2PetriNet {
+	from process : SimplePDL!Process
+	to petri : PetriNet!PetriNet(name <- process.name)
+}
+
+helper context SimplePDL!ProcessElement
+def: getProcess() : SimplePDL!Process =
+	SimplePDL!Process.allInstances()
+					-> select(e | e.processElements->includes(self))
+					-> asSequence() -> first();
+
+rule WD2PetriNet {
+	from wd : SimplePDL!WorkDefinition
+	to place_not_started : PetriNet!Place(petri <- wd.getProcess(), name <- wd.name + '_NotStarted', jeton <- 1),
+	   transition_start : PetriNet!Transition(petri <- wd.getProcess(), name <- wd.name + '_start'),
+	   place_started : PetriNet!Place(petri <- wd.getProcess(), name <- wd.name + '_Started', jeton <- 0),
+	   place_running : PetriNet!Place(petri <- wd.getProcess(), name <- wd.name + '_Running', jeton <- 0),
+	   transition_finish : PetriNet!Transition(petri <- wd.getProcess(), name <- wd.name + '_finish'),
+	   place_finished : PetriNet!Place(petri <- wd.getProcess(), name <- wd.name + '_Finished', jeton <- 0),
+	   arc_not_started_start : PetriNet!Arc(weight <- 1, kind <- #normal, direction <- #placeToTransition, source <- place_not_started, target <- transition_start),
+	   arc_start_started : PetriNet!Arc(weight <- 1, kind <- #normal, direction <- #transitionToPlace, source <- transition_start, target <- place_started),
+	   arc_start_running : PetriNet!Arc(weight <- 1, kind <- #normal, direction <- #transitionToPlace, source <- transition_start, target <- place_running),
+	   arc_running_finish : PetriNet!Arc(weight <- 1, kind <- #normal, direction <- #placeToTransition, source <- place_running, target <- transition_finish),
+	   arc_finish_finished : PetriNet!Arc(weight <- 1, kind <- #normal, direction <- #transitionToPlace, source <- transition_finish, target <- place_finished)
+}
+ 
+
+rule WS2ReadArc {
+	from ws : SimplePDL!WorkSequence
+	to read : PetriNet!Arc(
+		kind <- #read,
+		weight <- 1,
+		direction <- #placeToTransition,
+		source <-  thisModule.resolveTemp(ws.predecessor, 'place_' +
+			(if ws.linkType = #startToStart or ws.linkType = #startToFinish then
+				'Started'
+			else
+				'Finished'		
+			endif)),
+		target <- thisModule.resolveTemp(ws.successor, 'transition_' +
+			(if ws.linkType = #startToStart or ws.linkType = #finishToStart then
+				'start'
+			else
+				'finish'		
+			endif))
+		)
+}

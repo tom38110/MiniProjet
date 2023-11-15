@@ -1,0 +1,608 @@
+!SESSION 2023-11-10 15:14:02.132 -----------------------------------------------
+eclipse.buildId=4.17.0.I20200902-1800
+java.version=11.0.20.1
+java.vendor=Ubuntu
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=fr_FR
+Framework arguments:  -product org.eclipse.platform.ide
+Command-line arguments:  -product org.eclipse.platform.ide -data /home/taudard/IDM/MiniProjet/mp/../runtime-EclipseXtext -dev file:/home/taudard/IDM/MiniProjet/mp/.metadata/.plugins/org.eclipse.pde.core/Launch Runtime Eclipse/dev.properties -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.emf.ecore 2 0 2023-11-10 15:14:06.750
+!MESSAGE Both 'fr.n7.idm.simplepdl' and 'fr.n7.simplePDL' register a package for 'http://simplepdl'
+
+!ENTRY org.eclipse.emf.cdo.explorer 4 0 2023-11-10 15:31:45.698
+!MESSAGE InterruptedException
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1343)
+	at java.base/java.util.concurrent.Semaphore.acquire(Semaphore.java:318)
+	at org.eclipse.net4j.util.lifecycle.Lifecycle.lock(Lifecycle.java:312)
+	at org.eclipse.net4j.util.lifecycle.Lifecycle.internalDeactivate(Lifecycle.java:118)
+	at org.eclipse.net4j.util.lifecycle.ShareableLifecycle.internalDeactivate(ShareableLifecycle.java:52)
+	at org.eclipse.net4j.util.lifecycle.Lifecycle.deactivate(Lifecycle.java:170)
+	at org.eclipse.net4j.util.lifecycle.LifecycleUtil.deactivate(LifecycleUtil.java:235)
+	at org.eclipse.net4j.util.lifecycle.LifecycleUtil.deactivate(LifecycleUtil.java:225)
+	at org.eclipse.emf.cdo.internal.explorer.bundle.OM.disposeManagers(OM.java:83)
+	at org.eclipse.emf.cdo.internal.explorer.bundle.OM$Activator.doStop(OM.java:136)
+	at org.eclipse.net4j.util.om.OSGiActivator.stop(OSGiActivator.java:92)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:871)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:863)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:1025)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:370)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:660)
+	at org.eclipse.osgi.container.Module.stop(Module.java:521)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1886)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1761)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:275)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:202)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:660)
+	at org.eclipse.osgi.container.Module.stop(Module.java:521)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:207)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:220)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+!SESSION 2023-11-10 15:38:29.225 -----------------------------------------------
+eclipse.buildId=4.17.0.I20200902-1800
+java.version=11.0.20.1
+java.vendor=Ubuntu
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=fr_FR
+Framework arguments:  -product org.eclipse.platform.ide
+Command-line arguments:  -product org.eclipse.platform.ide -data /home/taudard/IDM/MiniProjet/mp/../runtime-EclipseXtext -dev file:/home/taudard/IDM/MiniProjet/mp/.metadata/.plugins/org.eclipse.pde.core/Launch Runtime Eclipse/dev.properties -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.emf.ecore 2 0 2023-11-10 15:38:33.494
+!MESSAGE Both 'fr.n7.idm.simplepdl' and 'fr.n7.simplePDL' register a package for 'http://simplepdl'
+
+!ENTRY org.eclipse.emf.cdo.explorer 4 0 2023-11-10 15:38:58.900
+!MESSAGE InterruptedException
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1343)
+	at java.base/java.util.concurrent.Semaphore.acquire(Semaphore.java:318)
+	at org.eclipse.net4j.util.lifecycle.Lifecycle.lock(Lifecycle.java:312)
+	at org.eclipse.net4j.util.lifecycle.Lifecycle.internalDeactivate(Lifecycle.java:118)
+	at org.eclipse.net4j.util.lifecycle.ShareableLifecycle.internalDeactivate(ShareableLifecycle.java:52)
+	at org.eclipse.net4j.util.lifecycle.Lifecycle.deactivate(Lifecycle.java:170)
+	at org.eclipse.net4j.util.lifecycle.LifecycleUtil.deactivate(LifecycleUtil.java:235)
+	at org.eclipse.net4j.util.lifecycle.LifecycleUtil.deactivate(LifecycleUtil.java:225)
+	at org.eclipse.emf.cdo.internal.explorer.bundle.OM.disposeManagers(OM.java:83)
+	at org.eclipse.emf.cdo.internal.explorer.bundle.OM$Activator.doStop(OM.java:136)
+	at org.eclipse.net4j.util.om.OSGiActivator.stop(OSGiActivator.java:92)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:871)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:863)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:1025)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:370)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:660)
+	at org.eclipse.osgi.container.Module.stop(Module.java:521)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1886)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1761)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:275)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:202)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:660)
+	at org.eclipse.osgi.container.Module.stop(Module.java:521)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:207)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:220)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+!SESSION 2023-11-10 15:39:05.820 -----------------------------------------------
+eclipse.buildId=4.17.0.I20200902-1800
+java.version=11.0.20.1
+java.vendor=Ubuntu
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=fr_FR
+Framework arguments:  -product org.eclipse.platform.ide
+Command-line arguments:  -product org.eclipse.platform.ide -data /home/taudard/IDM/MiniProjet/mp/../runtime-EclipseXtext -dev file:/home/taudard/IDM/MiniProjet/mp/.metadata/.plugins/org.eclipse.pde.core/Launch Runtime Eclipse/dev.properties -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.emf.ecore 2 0 2023-11-10 15:39:09.740
+!MESSAGE Both 'fr.n7.idm.simplepdl' and 'fr.n7.simplePDL' register a package for 'http://simplepdl'
+
+!ENTRY org.eclipse.emf.cdo.explorer 4 0 2023-11-10 15:39:41.307
+!MESSAGE InterruptedException
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1343)
+	at java.base/java.util.concurrent.Semaphore.acquire(Semaphore.java:318)
+	at org.eclipse.net4j.util.lifecycle.Lifecycle.lock(Lifecycle.java:312)
+	at org.eclipse.net4j.util.lifecycle.Lifecycle.internalDeactivate(Lifecycle.java:118)
+	at org.eclipse.net4j.util.lifecycle.ShareableLifecycle.internalDeactivate(ShareableLifecycle.java:52)
+	at org.eclipse.net4j.util.lifecycle.Lifecycle.deactivate(Lifecycle.java:170)
+	at org.eclipse.net4j.util.lifecycle.LifecycleUtil.deactivate(LifecycleUtil.java:235)
+	at org.eclipse.net4j.util.lifecycle.LifecycleUtil.deactivate(LifecycleUtil.java:225)
+	at org.eclipse.emf.cdo.internal.explorer.bundle.OM.disposeManagers(OM.java:83)
+	at org.eclipse.emf.cdo.internal.explorer.bundle.OM$Activator.doStop(OM.java:136)
+	at org.eclipse.net4j.util.om.OSGiActivator.stop(OSGiActivator.java:92)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:871)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:863)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:1025)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:370)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:660)
+	at org.eclipse.osgi.container.Module.stop(Module.java:521)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1886)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1761)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:275)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:202)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:660)
+	at org.eclipse.osgi.container.Module.stop(Module.java:521)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:207)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:220)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+!SESSION 2023-11-10 15:40:33.485 -----------------------------------------------
+eclipse.buildId=4.17.0.I20200902-1800
+java.version=11.0.20.1
+java.vendor=Ubuntu
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=fr_FR
+Framework arguments:  -product org.eclipse.platform.ide
+Command-line arguments:  -product org.eclipse.platform.ide -data /home/taudard/IDM/MiniProjet/mp/../runtime-EclipseXtext -dev file:/home/taudard/IDM/MiniProjet/mp/.metadata/.plugins/org.eclipse.pde.core/Launch Runtime Eclipse/dev.properties -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.emf.ecore 2 0 2023-11-10 15:40:37.370
+!MESSAGE Both 'fr.n7.idm.simplepdl' and 'fr.n7.simplePDL' register a package for 'http://simplepdl'
+
+!ENTRY org.eclipse.emf.cdo.explorer 4 0 2023-11-10 15:44:13.712
+!MESSAGE InterruptedException
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1343)
+	at java.base/java.util.concurrent.Semaphore.acquire(Semaphore.java:318)
+	at org.eclipse.net4j.util.lifecycle.Lifecycle.lock(Lifecycle.java:312)
+	at org.eclipse.net4j.util.lifecycle.Lifecycle.internalDeactivate(Lifecycle.java:118)
+	at org.eclipse.net4j.util.lifecycle.ShareableLifecycle.internalDeactivate(ShareableLifecycle.java:52)
+	at org.eclipse.net4j.util.lifecycle.Lifecycle.deactivate(Lifecycle.java:170)
+	at org.eclipse.net4j.util.lifecycle.LifecycleUtil.deactivate(LifecycleUtil.java:235)
+	at org.eclipse.net4j.util.lifecycle.LifecycleUtil.deactivate(LifecycleUtil.java:225)
+	at org.eclipse.emf.cdo.internal.explorer.bundle.OM.disposeManagers(OM.java:83)
+	at org.eclipse.emf.cdo.internal.explorer.bundle.OM$Activator.doStop(OM.java:136)
+	at org.eclipse.net4j.util.om.OSGiActivator.stop(OSGiActivator.java:92)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:871)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:863)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:1025)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:370)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:660)
+	at org.eclipse.osgi.container.Module.stop(Module.java:521)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1886)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1761)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:275)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:202)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:660)
+	at org.eclipse.osgi.container.Module.stop(Module.java:521)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:207)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:220)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+!SESSION 2023-11-13 18:19:31.518 -----------------------------------------------
+eclipse.buildId=4.17.0.I20200902-1800
+java.version=11.0.20.1
+java.vendor=Ubuntu
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=fr_FR
+Framework arguments:  -product org.eclipse.platform.ide
+Command-line arguments:  -product org.eclipse.platform.ide -data /home/taudard/IDM/MiniProjet/mp/../runtime-EclipseXtext -dev file:/home/taudard/IDM/MiniProjet/mp/.metadata/.plugins/org.eclipse.pde.core/Launch Runtime Eclipse/dev.properties -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.emf.ecore 2 0 2023-11-13 18:19:35.945
+!MESSAGE Both 'fr.n7.idm.simplepdl' and 'fr.n7.simplePDL' register a package for 'http://simplepdl'
+
+!ENTRY org.eclipse.ui.navigator 4 0 2023-11-13 18:22:17.158
+!MESSAGE Cannot find navigator content extension (using triggerPoints) for object "<null>" parent path: "P/fr.n7.simplepdl.exemples2". Check that you have an expression for this object in a navigatorContent triggerPoints or enablement.
+
+!ENTRY org.eclipse.emf.cdo.explorer 4 0 2023-11-13 18:47:51.691
+!MESSAGE InterruptedException
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1343)
+	at java.base/java.util.concurrent.Semaphore.acquire(Semaphore.java:318)
+	at org.eclipse.net4j.util.lifecycle.Lifecycle.lock(Lifecycle.java:312)
+	at org.eclipse.net4j.util.lifecycle.Lifecycle.internalDeactivate(Lifecycle.java:118)
+	at org.eclipse.net4j.util.lifecycle.ShareableLifecycle.internalDeactivate(ShareableLifecycle.java:52)
+	at org.eclipse.net4j.util.lifecycle.Lifecycle.deactivate(Lifecycle.java:170)
+	at org.eclipse.net4j.util.lifecycle.LifecycleUtil.deactivate(LifecycleUtil.java:235)
+	at org.eclipse.net4j.util.lifecycle.LifecycleUtil.deactivate(LifecycleUtil.java:225)
+	at org.eclipse.emf.cdo.internal.explorer.bundle.OM.disposeManagers(OM.java:83)
+	at org.eclipse.emf.cdo.internal.explorer.bundle.OM$Activator.doStop(OM.java:136)
+	at org.eclipse.net4j.util.om.OSGiActivator.stop(OSGiActivator.java:92)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:871)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:863)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:1025)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:370)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:660)
+	at org.eclipse.osgi.container.Module.stop(Module.java:521)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1886)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1761)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:275)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:202)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:660)
+	at org.eclipse.osgi.container.Module.stop(Module.java:521)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:207)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:220)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+!SESSION 2023-11-13 18:48:06.619 -----------------------------------------------
+eclipse.buildId=4.17.0.I20200902-1800
+java.version=11.0.20.1
+java.vendor=Ubuntu
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=fr_FR
+Framework arguments:  -product org.eclipse.platform.ide
+Command-line arguments:  -product org.eclipse.platform.ide -data /home/taudard/IDM/MiniProjet/mp/../runtime-EclipseXtext -dev file:/home/taudard/IDM/MiniProjet/mp/.metadata/.plugins/org.eclipse.pde.core/Launch Runtime Eclipse/dev.properties -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.emf.ecore 2 0 2023-11-13 18:48:10.763
+!MESSAGE Both 'fr.n7.idm.simplepdl' and 'fr.n7.simplePDL' register a package for 'http://simplepdl'
+
+!ENTRY org.eclipse.ui.navigator 4 0 2023-11-13 18:52:09.802
+!MESSAGE Cannot find navigator content extension (using triggerPoints) for object "<null>" parent path: "P/fr.n7.simplepdlxtext.exemples". Check that you have an expression for this object in a navigatorContent triggerPoints or enablement.
+
+!ENTRY org.eclipse.emf.cdo.explorer 4 0 2023-11-13 18:54:54.141
+!MESSAGE InterruptedException
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1343)
+	at java.base/java.util.concurrent.Semaphore.acquire(Semaphore.java:318)
+	at org.eclipse.net4j.util.lifecycle.Lifecycle.lock(Lifecycle.java:312)
+	at org.eclipse.net4j.util.lifecycle.Lifecycle.internalDeactivate(Lifecycle.java:118)
+	at org.eclipse.net4j.util.lifecycle.ShareableLifecycle.internalDeactivate(ShareableLifecycle.java:52)
+	at org.eclipse.net4j.util.lifecycle.Lifecycle.deactivate(Lifecycle.java:170)
+	at org.eclipse.net4j.util.lifecycle.LifecycleUtil.deactivate(LifecycleUtil.java:235)
+	at org.eclipse.net4j.util.lifecycle.LifecycleUtil.deactivate(LifecycleUtil.java:225)
+	at org.eclipse.emf.cdo.internal.explorer.bundle.OM.disposeManagers(OM.java:83)
+	at org.eclipse.emf.cdo.internal.explorer.bundle.OM$Activator.doStop(OM.java:136)
+	at org.eclipse.net4j.util.om.OSGiActivator.stop(OSGiActivator.java:92)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:871)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:863)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:1025)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:370)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:660)
+	at org.eclipse.osgi.container.Module.stop(Module.java:521)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1886)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1761)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:275)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:202)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:660)
+	at org.eclipse.osgi.container.Module.stop(Module.java:521)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:207)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:220)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+!SESSION 2023-11-13 18:55:44.769 -----------------------------------------------
+eclipse.buildId=4.17.0.I20200902-1800
+java.version=11.0.20.1
+java.vendor=Ubuntu
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=fr_FR
+Framework arguments:  -product org.eclipse.platform.ide
+Command-line arguments:  -product org.eclipse.platform.ide -data /home/taudard/IDM/MiniProjet/mp/../runtime-EclipseXtext -dev file:/home/taudard/IDM/MiniProjet/mp/.metadata/.plugins/org.eclipse.pde.core/Launch Runtime Eclipse/dev.properties -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.emf.ecore 2 0 2023-11-13 18:55:49.123
+!MESSAGE Both 'fr.n7.idm.simplepdl' and 'fr.n7.simplePDL' register a package for 'http://simplepdl'
+
+!ENTRY org.eclipse.emf.cdo.explorer 4 0 2023-11-13 18:57:08.767
+!MESSAGE InterruptedException
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1343)
+	at java.base/java.util.concurrent.Semaphore.acquire(Semaphore.java:318)
+	at org.eclipse.net4j.util.lifecycle.Lifecycle.lock(Lifecycle.java:312)
+	at org.eclipse.net4j.util.lifecycle.Lifecycle.internalDeactivate(Lifecycle.java:118)
+	at org.eclipse.net4j.util.lifecycle.ShareableLifecycle.internalDeactivate(ShareableLifecycle.java:52)
+	at org.eclipse.net4j.util.lifecycle.Lifecycle.deactivate(Lifecycle.java:170)
+	at org.eclipse.net4j.util.lifecycle.LifecycleUtil.deactivate(LifecycleUtil.java:235)
+	at org.eclipse.net4j.util.lifecycle.LifecycleUtil.deactivate(LifecycleUtil.java:225)
+	at org.eclipse.emf.cdo.internal.explorer.bundle.OM.disposeManagers(OM.java:83)
+	at org.eclipse.emf.cdo.internal.explorer.bundle.OM$Activator.doStop(OM.java:136)
+	at org.eclipse.net4j.util.om.OSGiActivator.stop(OSGiActivator.java:92)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:871)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:863)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:1025)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:370)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:660)
+	at org.eclipse.osgi.container.Module.stop(Module.java:521)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1886)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1761)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:275)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:202)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:660)
+	at org.eclipse.osgi.container.Module.stop(Module.java:521)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:207)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:220)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+!SESSION 2023-11-13 18:57:18.535 -----------------------------------------------
+eclipse.buildId=4.17.0.I20200902-1800
+java.version=11.0.20.1
+java.vendor=Ubuntu
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=fr_FR
+Framework arguments:  -product org.eclipse.platform.ide
+Command-line arguments:  -product org.eclipse.platform.ide -data /home/taudard/IDM/MiniProjet/mp/../runtime-EclipseXtext -dev file:/home/taudard/IDM/MiniProjet/mp/.metadata/.plugins/org.eclipse.pde.core/Launch Runtime Eclipse/dev.properties -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.emf.ecore 2 0 2023-11-13 18:57:22.748
+!MESSAGE Both 'fr.n7.idm.simplepdl' and 'fr.n7.simplePDL' register a package for 'http://simplepdl'
+
+!ENTRY org.eclipse.emf.cdo.explorer 4 0 2023-11-13 18:57:53.485
+!MESSAGE InterruptedException
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1343)
+	at java.base/java.util.concurrent.Semaphore.acquire(Semaphore.java:318)
+	at org.eclipse.net4j.util.lifecycle.Lifecycle.lock(Lifecycle.java:312)
+	at org.eclipse.net4j.util.lifecycle.Lifecycle.internalDeactivate(Lifecycle.java:118)
+	at org.eclipse.net4j.util.lifecycle.ShareableLifecycle.internalDeactivate(ShareableLifecycle.java:52)
+	at org.eclipse.net4j.util.lifecycle.Lifecycle.deactivate(Lifecycle.java:170)
+	at org.eclipse.net4j.util.lifecycle.LifecycleUtil.deactivate(LifecycleUtil.java:235)
+	at org.eclipse.net4j.util.lifecycle.LifecycleUtil.deactivate(LifecycleUtil.java:225)
+	at org.eclipse.emf.cdo.internal.explorer.bundle.OM.disposeManagers(OM.java:83)
+	at org.eclipse.emf.cdo.internal.explorer.bundle.OM$Activator.doStop(OM.java:136)
+	at org.eclipse.net4j.util.om.OSGiActivator.stop(OSGiActivator.java:92)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:871)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:863)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:1025)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:370)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:660)
+	at org.eclipse.osgi.container.Module.stop(Module.java:521)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1886)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1761)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:275)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:202)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:660)
+	at org.eclipse.osgi.container.Module.stop(Module.java:521)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:207)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:220)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+!SESSION 2023-11-13 18:58:11.285 -----------------------------------------------
+eclipse.buildId=4.17.0.I20200902-1800
+java.version=11.0.20.1
+java.vendor=Ubuntu
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=fr_FR
+Framework arguments:  -product org.eclipse.platform.ide
+Command-line arguments:  -product org.eclipse.platform.ide -data /home/taudard/IDM/MiniProjet/mp/../runtime-EclipseXtext -dev file:/home/taudard/IDM/MiniProjet/mp/.metadata/.plugins/org.eclipse.pde.core/Launch Runtime Eclipse/dev.properties -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.emf.ecore 2 0 2023-11-13 18:58:15.136
+!MESSAGE Both 'fr.n7.idm.simplepdl' and 'fr.n7.simplePDL' register a package for 'http://simplepdl'
+
+!ENTRY org.eclipse.emf.cdo.explorer 4 0 2023-11-13 19:04:21.930
+!MESSAGE InterruptedException
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1343)
+	at java.base/java.util.concurrent.Semaphore.acquire(Semaphore.java:318)
+	at org.eclipse.net4j.util.lifecycle.Lifecycle.lock(Lifecycle.java:312)
+	at org.eclipse.net4j.util.lifecycle.Lifecycle.internalDeactivate(Lifecycle.java:118)
+	at org.eclipse.net4j.util.lifecycle.ShareableLifecycle.internalDeactivate(ShareableLifecycle.java:52)
+	at org.eclipse.net4j.util.lifecycle.Lifecycle.deactivate(Lifecycle.java:170)
+	at org.eclipse.net4j.util.lifecycle.LifecycleUtil.deactivate(LifecycleUtil.java:235)
+	at org.eclipse.net4j.util.lifecycle.LifecycleUtil.deactivate(LifecycleUtil.java:225)
+	at org.eclipse.emf.cdo.internal.explorer.bundle.OM.disposeManagers(OM.java:83)
+	at org.eclipse.emf.cdo.internal.explorer.bundle.OM$Activator.doStop(OM.java:136)
+	at org.eclipse.net4j.util.om.OSGiActivator.stop(OSGiActivator.java:92)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:871)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:863)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:1025)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:370)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:660)
+	at org.eclipse.osgi.container.Module.stop(Module.java:521)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1886)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1761)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:275)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:202)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:660)
+	at org.eclipse.osgi.container.Module.stop(Module.java:521)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:207)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:220)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+!SESSION 2023-11-13 19:05:27.096 -----------------------------------------------
+eclipse.buildId=4.17.0.I20200902-1800
+java.version=11.0.20.1
+java.vendor=Ubuntu
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=fr_FR
+Framework arguments:  -product org.eclipse.platform.ide
+Command-line arguments:  -product org.eclipse.platform.ide -data /home/taudard/IDM/MiniProjet/mp/../runtime-EclipseXtext -dev file:/home/taudard/IDM/MiniProjet/mp/.metadata/.plugins/org.eclipse.pde.core/Launch Runtime Eclipse/dev.properties -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.emf.ecore 2 0 2023-11-13 19:05:31.390
+!MESSAGE Both 'fr.n7.idm.simplepdl' and 'fr.n7.simplePDL' register a package for 'http://simplepdl'
+
+!ENTRY org.eclipse.emf.cdo.explorer 4 0 2023-11-13 19:08:49.072
+!MESSAGE InterruptedException
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1343)
+	at java.base/java.util.concurrent.Semaphore.acquire(Semaphore.java:318)
+	at org.eclipse.net4j.util.lifecycle.Lifecycle.lock(Lifecycle.java:312)
+	at org.eclipse.net4j.util.lifecycle.Lifecycle.internalDeactivate(Lifecycle.java:118)
+	at org.eclipse.net4j.util.lifecycle.ShareableLifecycle.internalDeactivate(ShareableLifecycle.java:52)
+	at org.eclipse.net4j.util.lifecycle.Lifecycle.deactivate(Lifecycle.java:170)
+	at org.eclipse.net4j.util.lifecycle.LifecycleUtil.deactivate(LifecycleUtil.java:235)
+	at org.eclipse.net4j.util.lifecycle.LifecycleUtil.deactivate(LifecycleUtil.java:225)
+	at org.eclipse.emf.cdo.internal.explorer.bundle.OM.disposeManagers(OM.java:83)
+	at org.eclipse.emf.cdo.internal.explorer.bundle.OM$Activator.doStop(OM.java:136)
+	at org.eclipse.net4j.util.om.OSGiActivator.stop(OSGiActivator.java:92)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:871)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:863)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:1025)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:370)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:660)
+	at org.eclipse.osgi.container.Module.stop(Module.java:521)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1886)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1761)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:275)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:202)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:660)
+	at org.eclipse.osgi.container.Module.stop(Module.java:521)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:207)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:220)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+!SESSION 2023-11-13 19:09:16.169 -----------------------------------------------
+eclipse.buildId=4.17.0.I20200902-1800
+java.version=11.0.20.1
+java.vendor=Ubuntu
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=fr_FR
+Framework arguments:  -product org.eclipse.platform.ide
+Command-line arguments:  -product org.eclipse.platform.ide -data /home/taudard/IDM/MiniProjet/mp/../runtime-EclipseXtext -dev file:/home/taudard/IDM/MiniProjet/mp/.metadata/.plugins/org.eclipse.pde.core/Launch Runtime Eclipse/dev.properties -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.emf.ecore 2 0 2023-11-13 19:09:20.360
+!MESSAGE Both 'fr.n7.idm.simplepdl' and 'fr.n7.simplePDL' register a package for 'http://simplepdl'
+
+!ENTRY org.eclipse.emf.cdo.explorer 4 0 2023-11-13 19:15:34.541
+!MESSAGE InterruptedException
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1343)
+	at java.base/java.util.concurrent.Semaphore.acquire(Semaphore.java:318)
+	at org.eclipse.net4j.util.lifecycle.Lifecycle.lock(Lifecycle.java:312)
+	at org.eclipse.net4j.util.lifecycle.Lifecycle.internalDeactivate(Lifecycle.java:118)
+	at org.eclipse.net4j.util.lifecycle.ShareableLifecycle.internalDeactivate(ShareableLifecycle.java:52)
+	at org.eclipse.net4j.util.lifecycle.Lifecycle.deactivate(Lifecycle.java:170)
+	at org.eclipse.net4j.util.lifecycle.LifecycleUtil.deactivate(LifecycleUtil.java:235)
+	at org.eclipse.net4j.util.lifecycle.LifecycleUtil.deactivate(LifecycleUtil.java:225)
+	at org.eclipse.emf.cdo.internal.explorer.bundle.OM.disposeManagers(OM.java:83)
+	at org.eclipse.emf.cdo.internal.explorer.bundle.OM$Activator.doStop(OM.java:136)
+	at org.eclipse.net4j.util.om.OSGiActivator.stop(OSGiActivator.java:92)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:871)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:863)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:1025)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:370)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:660)
+	at org.eclipse.osgi.container.Module.stop(Module.java:521)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1886)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1761)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:275)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:202)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:660)
+	at org.eclipse.osgi.container.Module.stop(Module.java:521)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:207)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:220)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+!SESSION 2023-11-13 19:16:11.574 -----------------------------------------------
+eclipse.buildId=4.17.0.I20200902-1800
+java.version=11.0.20.1
+java.vendor=Ubuntu
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=fr_FR
+Framework arguments:  -product org.eclipse.platform.ide
+Command-line arguments:  -product org.eclipse.platform.ide -data /home/taudard/IDM/MiniProjet/mp/../runtime-EclipseXtext -dev file:/home/taudard/IDM/MiniProjet/mp/.metadata/.plugins/org.eclipse.pde.core/Launch Runtime Eclipse/dev.properties -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.emf.ecore 2 0 2023-11-13 19:16:15.719
+!MESSAGE Both 'fr.n7.idm.simplepdl' and 'fr.n7.simplePDL' register a package for 'http://simplepdl'
+
+!ENTRY org.eclipse.emf.cdo.explorer 4 0 2023-11-13 19:19:02.605
+!MESSAGE InterruptedException
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1343)
+	at java.base/java.util.concurrent.Semaphore.acquire(Semaphore.java:318)
+	at org.eclipse.net4j.util.lifecycle.Lifecycle.lock(Lifecycle.java:312)
+	at org.eclipse.net4j.util.lifecycle.Lifecycle.internalDeactivate(Lifecycle.java:118)
+	at org.eclipse.net4j.util.lifecycle.ShareableLifecycle.internalDeactivate(ShareableLifecycle.java:52)
+	at org.eclipse.net4j.util.lifecycle.Lifecycle.deactivate(Lifecycle.java:170)
+	at org.eclipse.net4j.util.lifecycle.LifecycleUtil.deactivate(LifecycleUtil.java:235)
+	at org.eclipse.net4j.util.lifecycle.LifecycleUtil.deactivate(LifecycleUtil.java:225)
+	at org.eclipse.emf.cdo.internal.explorer.bundle.OM.disposeManagers(OM.java:83)
+	at org.eclipse.emf.cdo.internal.explorer.bundle.OM$Activator.doStop(OM.java:136)
+	at org.eclipse.net4j.util.om.OSGiActivator.stop(OSGiActivator.java:92)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:871)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:863)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:1025)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:370)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:660)
+	at org.eclipse.osgi.container.Module.stop(Module.java:521)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1886)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1761)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:275)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:202)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:660)
+	at org.eclipse.osgi.container.Module.stop(Module.java:521)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:207)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:220)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+!SESSION 2023-11-15 16:20:22.783 -----------------------------------------------
+eclipse.buildId=4.17.0.I20200902-1800
+java.version=11.0.20.1
+java.vendor=Ubuntu
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=fr_FR
+Framework arguments:  -product org.eclipse.platform.ide
+Command-line arguments:  -product org.eclipse.platform.ide -data /home/taudard/IDM/MiniProjet/mp/../runtime-EclipseXtext -dev file:/home/taudard/IDM/MiniProjet/mp/.metadata/.plugins/org.eclipse.pde.core/Launch Runtime Eclipse/dev.properties -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.emf.ecore 2 0 2023-11-15 16:20:29.056
+!MESSAGE Both 'fr.n7.idm.simplepdl' and 'fr.n7.simplePDL' register a package for 'http://simplepdl'
+
+!ENTRY org.eclipse.emf.cdo.explorer 4 0 2023-11-15 16:21:03.661
+!MESSAGE InterruptedException
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1343)
+	at java.base/java.util.concurrent.Semaphore.acquire(Semaphore.java:318)
+	at org.eclipse.net4j.util.lifecycle.Lifecycle.lock(Lifecycle.java:312)
+	at org.eclipse.net4j.util.lifecycle.Lifecycle.internalDeactivate(Lifecycle.java:118)
+	at org.eclipse.net4j.util.lifecycle.ShareableLifecycle.internalDeactivate(ShareableLifecycle.java:52)
+	at org.eclipse.net4j.util.lifecycle.Lifecycle.deactivate(Lifecycle.java:170)
+	at org.eclipse.net4j.util.lifecycle.LifecycleUtil.deactivate(LifecycleUtil.java:235)
+	at org.eclipse.net4j.util.lifecycle.LifecycleUtil.deactivate(LifecycleUtil.java:225)
+	at org.eclipse.emf.cdo.internal.explorer.bundle.OM.disposeManagers(OM.java:83)
+	at org.eclipse.emf.cdo.internal.explorer.bundle.OM$Activator.doStop(OM.java:136)
+	at org.eclipse.net4j.util.om.OSGiActivator.stop(OSGiActivator.java:92)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:871)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:863)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:1025)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:370)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:660)
+	at org.eclipse.osgi.container.Module.stop(Module.java:521)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1886)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1761)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:275)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:202)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:660)
+	at org.eclipse.osgi.container.Module.stop(Module.java:521)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:207)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:220)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+!SESSION 2023-11-15 17:41:53.752 -----------------------------------------------
+eclipse.buildId=4.17.0.I20200902-1800
+java.version=11.0.20.1
+java.vendor=Ubuntu
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=fr_FR
+Framework arguments:  -product org.eclipse.platform.ide
+Command-line arguments:  -product org.eclipse.platform.ide -data /home/taudard/IDM/MiniProjet/mp/../runtime-EclipseXtext -dev file:/home/taudard/IDM/MiniProjet/mp/.metadata/.plugins/org.eclipse.pde.core/Launch Runtime Eclipse/dev.properties -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.emf.ecore 2 0 2023-11-15 17:41:58.283
+!MESSAGE Both 'fr.n7.idm.simplepdl' and 'fr.n7.simplePDL' register a package for 'http://simplepdl'
+
+!ENTRY org.eclipse.emf.cdo.explorer 4 0 2023-11-15 17:43:41.382
+!MESSAGE InterruptedException
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1343)
+	at java.base/java.util.concurrent.Semaphore.acquire(Semaphore.java:318)
+	at org.eclipse.net4j.util.lifecycle.Lifecycle.lock(Lifecycle.java:312)
+	at org.eclipse.net4j.util.lifecycle.Lifecycle.internalDeactivate(Lifecycle.java:118)
+	at org.eclipse.net4j.util.lifecycle.ShareableLifecycle.internalDeactivate(ShareableLifecycle.java:52)
+	at org.eclipse.net4j.util.lifecycle.Lifecycle.deactivate(Lifecycle.java:170)
+	at org.eclipse.net4j.util.lifecycle.LifecycleUtil.deactivate(LifecycleUtil.java:235)
+	at org.eclipse.net4j.util.lifecycle.LifecycleUtil.deactivate(LifecycleUtil.java:225)
+	at org.eclipse.emf.cdo.internal.explorer.bundle.OM.disposeManagers(OM.java:83)
+	at org.eclipse.emf.cdo.internal.explorer.bundle.OM$Activator.doStop(OM.java:136)
+	at org.eclipse.net4j.util.om.OSGiActivator.stop(OSGiActivator.java:92)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:871)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:863)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:1025)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:370)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:660)
+	at org.eclipse.osgi.container.Module.stop(Module.java:521)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1886)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1761)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:275)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:202)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:660)
+	at org.eclipse.osgi.container.Module.stop(Module.java:521)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:207)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:220)
+	at java.base/java.lang.Thread.run(Thread.java:829)

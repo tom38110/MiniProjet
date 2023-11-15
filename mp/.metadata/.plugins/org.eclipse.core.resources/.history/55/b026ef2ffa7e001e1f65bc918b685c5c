@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:petrinet="http://petrinet">
+  <petrinet:PetriNet name="Programmation"/>
+  <petrinet:Place name="Concevoir_NotStarted" jeton="1"/>
+  <petrinet:Transition name="Concevoir_start"/>
+  <petrinet:Place name="Concevoir_Started"/>
+  <petrinet:Place name="Concevoir_Running"/>
+  <petrinet:Transition name="Concevoir_finish"/>
+  <petrinet:Place name="Concevoir_Finished"/>
+  <petrinet:Arc weight="1" source="/1" target="/2"/>
+  <petrinet:Arc weight="1" source="/2" target="/3"/>
+  <petrinet:Arc weight="1" source="/2" target="/4"/>
+  <petrinet:Arc weight="1" source="/4" target="/5"/>
+  <petrinet:Arc weight="1" source="/5" target="/6"/>
+  <petrinet:Place name="Programmer_NotStarted" jeton="1"/>
+  <petrinet:Transition name="Programmer_start"/>
+  <petrinet:Place name="Programmer_Started"/>
+  <petrinet:Place name="Programmer_Running"/>
+  <petrinet:Transition name="Programmer_finish"/>
+  <petrinet:Place name="Programmer_Finished"/>
+  <petrinet:Arc weight="1" source="/12" target="/13"/>
+  <petrinet:Arc weight="1" source="/13" target="/14"/>
+  <petrinet:Arc weight="1" source="/13" target="/15"/>
+  <petrinet:Arc weight="1" source="/15" target="/16"/>
+  <petrinet:Arc weight="1" source="/16" target="/17"/>
+  <petrinet:Place name="Documenter_NotStarted" jeton="1"/>
+  <petrinet:Transition name="Documenter_start"/>
+  <petrinet:Place name="Documenter_Started"/>
+  <petrinet:Place name="Documenter_Running"/>
+  <petrinet:Transition name="Documenter_finish"/>
+  <petrinet:Place name="Documenter_Finished"/>
+  <petrinet:Arc weight="1" source="/23" target="/24"/>
+  <petrinet:Arc weight="1" source="/24" target="/25"/>
+  <petrinet:Arc weight="1" source="/24" target="/26"/>
+  <petrinet:Arc weight="1" source="/26" target="/27"/>
+  <petrinet:Arc weight="1" source="/27" target="/28"/>
+  <petrinet:Place name="Tester_NotStarted" jeton="1"/>
+  <petrinet:Transition name="Tester_start"/>
+  <petrinet:Place name="Tester_Started"/>
+  <petrinet:Place name="Tester_Running"/>
+  <petrinet:Transition name="Tester_finish"/>
+  <petrinet:Place name="Tester_Finished"/>
+  <petrinet:Arc weight="1" source="/34" target="/35"/>
+  <petrinet:Arc weight="1" source="/35" target="/36"/>
+  <petrinet:Arc weight="1" source="/35" target="/37"/>
+  <petrinet:Arc weight="1" source="/37" target="/38"/>
+  <petrinet:Arc weight="1" source="/38" target="/39"/>
+</xmi:XMI>

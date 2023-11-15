@@ -1,0 +1,9 @@
+grammar fr.n7.PDL with org.eclipse.xtext.common.Terminals
+
+generate pDL "http://www.n7.fr/PDL"
+
+Model:
+	greetings+=Greeting*;
+	
+Greeting:
+	'Hello' name=ID '!';

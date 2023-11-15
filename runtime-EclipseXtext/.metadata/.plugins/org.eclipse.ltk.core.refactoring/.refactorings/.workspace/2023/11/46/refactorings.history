@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;fr.n7.simplepdl.exemples/processExemple.pdl1&apos;" deleteContents="false" description="Delete resource &apos;fr.n7.simplepdl.exemples/processExemple.pdl1&apos;" element1="/fr.n7.simplepdl.exemples/processExemple.pdl1" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1699897865295"/>
+</session>

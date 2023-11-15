@@ -1,0 +1,26 @@
+INDEX VERSION 1.131+/home/taudard/IDM/MiniProjet/runtime-EclipseApplication/.metadata/.plugins/org.eclipse.jdt.core
+594756272.index
+836787774.index
+3144173601.index
+1492316222.index
+4270576026.index
+687162898.index
+2684007147.index
+3761123150.index
+3370953800.index
+1190385766.index
+1259215892.index
+649822626.index
+1969063402.index
+2479976885.index
+646308851.index
+1332398772.index
+910095251.index
+124733140.index
+3228602193.index
+1366149182.index
+701648383.index
+665994362.index
+1744987098.index
+3499872082.index
+830761727.index

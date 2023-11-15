@@ -1,0 +1,83 @@
+/**
+ * 
+ */
+package fr.n7.simplePDL2petriNet;
+
+import java.util.Map;
+
+import org.eclipse.emf.common.util.URI;
+import org.eclipse.emf.ecore.resource.Resource;
+import org.eclipse.emf.ecore.resource.ResourceSet;
+import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
+import org.eclipse.emf.ecore.xmi.impl.XMIResourceFactoryImpl;
+
+import petrinet.*;
+import simplepdl.*;
+import simplepdl.Process;
+
+/**
+ * @author taudard
+ *
+ */
+public class SimplePDL2PetriNet {
+
+	/**
+	* @param args
+	*/
+	public static void main(String[] args) {
+		// Chargement du package SimplePDL afin de l'enregistrer dans le registre d'Eclipse.
+		SimplepdlPackage simplepdlPackageInstance = SimplepdlPackage.eINSTANCE;
+		PetrinetPackage petrinetPackageInstance = PetrinetPackage.eINSTANCE;
+		
+		// Enregistrer l'extension ".xmi" comme devant être ouverte à
+		// l'aide d'un objet "XMIResourceFactoryImpl"
+		Resource.Factory.Registry reg = Resource.Factory.Registry.INSTANCE;
+		Map<String, Object> m = reg.getExtensionToFactoryMap();
+		m.put("xmi", new XMIResourceFactoryImpl());
+		// Créer un objet resourceSetImpl qui contiendra une ressource EMF (notre modèle)
+		ResourceSet resSet = new ResourceSetImpl();
+
+		// Charger la ressource (notre modèle)
+		URI modelURI = URI.createURI("models/SimplePDLCreator_Created_Process.xmi");
+		Resource resource = resSet.getResource(modelURI, true);
+		// La fabrique pour fabriquer les éléments de Petrinet
+	    PetrinetFactory myFactory = PetrinetFactory.eINSTANCE;
+	    
+		// Récupérer le premier élément du modèle (élément racine)
+		Process process = (Process) resource.getContents().get(0);
+		
+		// Ajouter le Process dans le modÃ¨le
+		resource.getContents().add(process);
+		/**
+		* Manipulation de notre instance
+		*/
+		// Accéder aux informations du processus chargé
+	    System.out.println("Processus : " + process.getName());
+	    // Naviguer dans les références
+	    Integer nbPE = process.getProcessElements().size();
+	    System.out.println("Nombre de ProcessElement dans " + process.getName() + " : " + nbPE);
+
+		// Afficher les sous-activités
+		System.out.println("Les sous-activités sont :");
+		for (Object o : process.getProcessElements()) {
+			if (o instanceof WorkDefinition) {
+				WorkDefinition wd = (WorkDefinition) o;
+				// cree 4 places
+				Place  p1 = myFactory.createPlace();
+				Place  p2 = myFactory.createPlace();
+				Place  p3 = myFactory.createPlace();
+				Place  p4 = myFactory.createPlace();
+				// cree 2 transition
+				Transition t1 = myFactory.createTransition();
+				Transition t2 = myFactory.createTransition();
+				// cree 5 arcs
+				Arc arc1 = myFactory.createArc();
+				Arc arc2 = myFactory.createArc();
+				Arc arc3 = myFactory.createArc();
+				Arc arc4 = myFactory.createArc();
+				Arc arc5 = myFactory.createArc();
+			}
+		}
+	}
+
+}

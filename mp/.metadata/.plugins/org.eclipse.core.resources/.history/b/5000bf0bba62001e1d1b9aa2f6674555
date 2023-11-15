@@ -1,0 +1,31 @@
+import 'SimplePDL.ecore'
+
+package simplepdl
+
+context Process
+-- Le nom d’une activité doit être composé d’au moins deux caractères
+-- Le nom d’une activité ne doit être composé que de lettres, chiffres ou soulignés, un chiffre
+-- ne peut pas être première position
+inv validName('Invalid name: ' + self.name):
+	self.name.size() >= 2 and self.name.matches('[A-Za-z_][A-Za-z0-9_]*')
+
+-- Deux activités différentes d’un même processus ne peuvent pas avoir le même nom
+-- inv uniqNames:
+--	self.processElements -> select(pe|pe.oclIsTypeOf(WorkDefinition))
+--	-> collect(pe|pe.oclAsType(WorkDefinition))
+--	-> forAll(wd1,wd2|wd1<>wd2 implies wd1.name<>wd2.name)
+	
+context WorkDefinition
+inv activitiesHaveDifferentNames: self.Process.processElements
+	->select(pe|pe.oclIsTypeOf(WorkDefinition))
+	-> collect(pe|pe.oclAsType(WorkDefinition))
+	->forAll(w|self=w or self.name<>w.name)
+inv validName('Invalid name: ' + self.name):
+	self.name.size() >= 2 and self.name.matches('[A-Za-z_][A-Za-z0-9_]*')
+	
+-- Une dépendance ne peut pas être réflexive
+context WorkSequence
+inv notReflexive: self.predecessor <> self.successor
+
+
+endpackage

@@ -1,0 +1,18 @@
+process Programmation {
+	wd Concevoir
+	wd Programmer
+	wd Documenter
+	wd Tester
+	ws f2f from Concevoir to Programmer
+	ws s2s from Concevoir to Tester
+	ws f2f from Concevoir to Tester
+	ws s2s from Programmer to Documenter
+	ws f2f from Programmer to Documenter
+	ws f2f from Programmer to Tester
+	ressource concepteur quantity 3
+	ressource developpeur quantity 2
+	ressource machine quantity 4
+	ressource redacteur quantity 1
+	ressource testeur quantity 2
+	Concevoir uses 2 
+}
