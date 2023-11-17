@@ -35,23 +35,23 @@ public class PDL1Parser extends AbstractContentAssistParser {
 			builder.put(grammarAccess.getWorkSequenceTypeAccess().getAlternatives(), "rule__WorkSequenceType__Alternatives");
 			builder.put(grammarAccess.getProcessAccess().getGroup(), "rule__Process__Group__0");
 			builder.put(grammarAccess.getWorkDefinitionAccess().getGroup(), "rule__WorkDefinition__Group__0");
+			builder.put(grammarAccess.getWorkDefinitionAccess().getGroup_2(), "rule__WorkDefinition__Group_2__0");
 			builder.put(grammarAccess.getWorkSequenceAccess().getGroup(), "rule__WorkSequence__Group__0");
 			builder.put(grammarAccess.getGuidanceAccess().getGroup(), "rule__Guidance__Group__0");
 			builder.put(grammarAccess.getRessourceAccess().getGroup(), "rule__Ressource__Group__0");
 			builder.put(grammarAccess.getRessourceUsedAccess().getGroup(), "rule__RessourceUsed__Group__0");
-			builder.put(grammarAccess.getRessourceUsedAccess().getGroup_2(), "rule__RessourceUsed__Group_2__0");
 			builder.put(grammarAccess.getProcessAccess().getNameAssignment_1(), "rule__Process__NameAssignment_1");
 			builder.put(grammarAccess.getProcessAccess().getProcessElementsAssignment_3(), "rule__Process__ProcessElementsAssignment_3");
 			builder.put(grammarAccess.getWorkDefinitionAccess().getNameAssignment_1(), "rule__WorkDefinition__NameAssignment_1");
+			builder.put(grammarAccess.getWorkDefinitionAccess().getRessourcesUsedAssignment_2_1(), "rule__WorkDefinition__RessourcesUsedAssignment_2_1");
 			builder.put(grammarAccess.getWorkSequenceAccess().getLinkTypeAssignment_1(), "rule__WorkSequence__LinkTypeAssignment_1");
 			builder.put(grammarAccess.getWorkSequenceAccess().getPredecessorAssignment_3(), "rule__WorkSequence__PredecessorAssignment_3");
 			builder.put(grammarAccess.getWorkSequenceAccess().getSuccessorAssignment_5(), "rule__WorkSequence__SuccessorAssignment_5");
 			builder.put(grammarAccess.getGuidanceAccess().getTexteAssignment_1(), "rule__Guidance__TexteAssignment_1");
 			builder.put(grammarAccess.getRessourceAccess().getNameAssignment_1(), "rule__Ressource__NameAssignment_1");
 			builder.put(grammarAccess.getRessourceAccess().getQuantityAssignment_3(), "rule__Ressource__QuantityAssignment_3");
-			builder.put(grammarAccess.getRessourceUsedAccess().getWorkdefinitionAssignment_0(), "rule__RessourceUsed__WorkdefinitionAssignment_0");
-			builder.put(grammarAccess.getRessourceUsedAccess().getOccAssignment_2_0(), "rule__RessourceUsed__OccAssignment_2_0");
-			builder.put(grammarAccess.getRessourceUsedAccess().getRessourcesAssignment_2_1(), "rule__RessourceUsed__RessourcesAssignment_2_1");
+			builder.put(grammarAccess.getRessourceUsedAccess().getOccAssignment_0(), "rule__RessourceUsed__OccAssignment_0");
+			builder.put(grammarAccess.getRessourceUsedAccess().getRessourceUsedAssignment_1(), "rule__RessourceUsed__RessourceUsedAssignment_1");
 		}
 	}
 	

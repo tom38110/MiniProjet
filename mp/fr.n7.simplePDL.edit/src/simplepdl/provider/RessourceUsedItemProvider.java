@@ -62,7 +62,6 @@ public class RessourceUsedItemProvider
 
 			addOccPropertyDescriptor(object);
 			addRessourcesPropertyDescriptor(object);
-			addWorkdefinitionPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -103,28 +102,6 @@ public class RessourceUsedItemProvider
 				 getString("_UI_RessourceUsed_ressources_feature"),
 				 getString("_UI_PropertyDescriptor_description", "_UI_RessourceUsed_ressources_feature", "_UI_RessourceUsed_type"),
 				 SimplepdlPackage.Literals.RESSOURCE_USED__RESSOURCES,
-				 true,
-				 false,
-				 true,
-				 null,
-				 null,
-				 null));
-	}
-
-	/**
-	 * This adds a property descriptor for the Workdefinition feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addWorkdefinitionPropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_RessourceUsed_workdefinition_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_RessourceUsed_workdefinition_feature", "_UI_RessourceUsed_type"),
-				 SimplepdlPackage.Literals.RESSOURCE_USED__WORKDEFINITION,
 				 true,
 				 false,
 				 true,

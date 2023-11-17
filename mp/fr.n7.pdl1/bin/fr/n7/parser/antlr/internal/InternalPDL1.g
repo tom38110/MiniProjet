@@ -180,15 +180,6 @@ ruleProcessElement returns [EObject current=null]
 			$current = $this_Ressource_3.current;
 			afterParserOrEnumRuleCall();
 		}
-		    |
-		{
-			newCompositeNode(grammarAccess.getProcessElementAccess().getRessourceUsedParserRuleCall_4());
-		}
-		this_RessourceUsed_4=ruleRessourceUsed
-		{
-			$current = $this_RessourceUsed_4.current;
-			afterParserOrEnumRuleCall();
-		}
 	)
 ;
 
@@ -230,6 +221,31 @@ ruleWorkDefinition returns [EObject current=null]
 				}
 			)
 		)
+		(
+			otherlv_2='uses'
+			{
+				newLeafNode(otherlv_2, grammarAccess.getWorkDefinitionAccess().getUsesKeyword_2_0());
+			}
+			(
+				(
+					{
+						newCompositeNode(grammarAccess.getWorkDefinitionAccess().getRessourcesUsedRessourceUsedParserRuleCall_2_1_0());
+					}
+					lv_ressourcesUsed_3_0=ruleRessourceUsed
+					{
+						if ($current==null) {
+							$current = createModelElementForParent(grammarAccess.getWorkDefinitionRule());
+						}
+						add(
+							$current,
+							"ressourcesUsed",
+							lv_ressourcesUsed_3_0,
+							"fr.n7.PDL1.RessourceUsed");
+						afterParserOrEnumRuleCall();
+					}
+				)
+			)+
+		)?
 	)
 ;
 
@@ -431,54 +447,35 @@ ruleRessourceUsed returns [EObject current=null]
 	(
 		(
 			(
+				lv_occ_0_0=RULE_INT
+				{
+					newLeafNode(lv_occ_0_0, grammarAccess.getRessourceUsedAccess().getOccINTTerminalRuleCall_0_0());
+				}
+				{
+					if ($current==null) {
+						$current = createModelElement(grammarAccess.getRessourceUsedRule());
+					}
+					setWithLastConsumed(
+						$current,
+						"occ",
+						lv_occ_0_0,
+						"org.eclipse.xtext.common.Terminals.INT");
+				}
+			)
+		)
+		(
+			(
 				{
 					if ($current==null) {
 						$current = createModelElement(grammarAccess.getRessourceUsedRule());
 					}
 				}
-				otherlv_0=RULE_ID
+				otherlv_1=RULE_ID
 				{
-					newLeafNode(otherlv_0, grammarAccess.getRessourceUsedAccess().getWorkdefinitionWorkDefinitionCrossReference_0_0());
+					newLeafNode(otherlv_1, grammarAccess.getRessourceUsedAccess().getRessourceUsedRessourceCrossReference_1_0());
 				}
 			)
 		)
-		otherlv_1='uses'
-		{
-			newLeafNode(otherlv_1, grammarAccess.getRessourceUsedAccess().getUsesKeyword_1());
-		}
-		(
-			(
-				(
-					lv_occ_2_0=RULE_INT
-					{
-						newLeafNode(lv_occ_2_0, grammarAccess.getRessourceUsedAccess().getOccINTTerminalRuleCall_2_0_0());
-					}
-					{
-						if ($current==null) {
-							$current = createModelElement(grammarAccess.getRessourceUsedRule());
-						}
-						setWithLastConsumed(
-							$current,
-							"occ",
-							lv_occ_2_0,
-							"org.eclipse.xtext.common.Terminals.INT");
-					}
-				)
-			)
-			(
-				(
-					{
-						if ($current==null) {
-							$current = createModelElement(grammarAccess.getRessourceUsedRule());
-						}
-					}
-					otherlv_3=RULE_ID
-					{
-						newLeafNode(otherlv_3, grammarAccess.getRessourceUsedAccess().getRessourcesRessourceCrossReference_2_1_0());
-					}
-				)
-			)
-		)+
 	)
 ;
 

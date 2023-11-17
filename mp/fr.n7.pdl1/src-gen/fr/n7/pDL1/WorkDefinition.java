@@ -3,6 +3,7 @@
  */
 package fr.n7.pDL1;
 
+import org.eclipse.emf.common.util.EList;
 
 /**
  * <!-- begin-user-doc -->
@@ -14,6 +15,7 @@ package fr.n7.pDL1;
  * </p>
  * <ul>
  *   <li>{@link fr.n7.pDL1.WorkDefinition#getName <em>Name</em>}</li>
+ *   <li>{@link fr.n7.pDL1.WorkDefinition#getRessourcesUsed <em>Ressources Used</em>}</li>
  * </ul>
  *
  * @see fr.n7.pDL1.PDL1Package#getWorkDefinition()
@@ -43,5 +45,17 @@ public interface WorkDefinition extends ProcessElement
    * @generated
    */
   void setName(String value);
+
+  /**
+   * Returns the value of the '<em><b>Ressources Used</b></em>' containment reference list.
+   * The list contents are of type {@link fr.n7.pDL1.RessourceUsed}.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the value of the '<em>Ressources Used</em>' containment reference list.
+   * @see fr.n7.pDL1.PDL1Package#getWorkDefinition_RessourcesUsed()
+   * @model containment="true"
+   * @generated
+   */
+  EList<RessourceUsed> getRessourcesUsed();
 
 } // WorkDefinition

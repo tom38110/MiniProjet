@@ -68,22 +68,24 @@ public interface RessourceUsed extends EObject {
 	void setRessources(Ressource value);
 
 	/**
-	 * Returns the value of the '<em><b>Workdefinition</b></em>' reference.
+	 * Returns the value of the '<em><b>Workdefinition</b></em>' container reference.
+	 * It is bidirectional and its opposite is '{@link simplepdl.WorkDefinition#getRessourcesUsed <em>Ressources Used</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Workdefinition</em>' reference.
+	 * @return the value of the '<em>Workdefinition</em>' container reference.
 	 * @see #setWorkdefinition(WorkDefinition)
 	 * @see simplepdl.SimplepdlPackage#getRessourceUsed_Workdefinition()
-	 * @model required="true"
+	 * @see simplepdl.WorkDefinition#getRessourcesUsed
+	 * @model opposite="ressourcesUsed" required="true" transient="false"
 	 * @generated
 	 */
 	WorkDefinition getWorkdefinition();
 
 	/**
-	 * Sets the value of the '{@link simplepdl.RessourceUsed#getWorkdefinition <em>Workdefinition</em>}' reference.
+	 * Sets the value of the '{@link simplepdl.RessourceUsed#getWorkdefinition <em>Workdefinition</em>}' container reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Workdefinition</em>' reference.
+	 * @param value the new value of the '<em>Workdefinition</em>' container reference.
 	 * @see #getWorkdefinition()
 	 * @generated
 	 */

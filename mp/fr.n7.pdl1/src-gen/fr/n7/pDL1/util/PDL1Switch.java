@@ -129,7 +129,6 @@ public class PDL1Switch<T> extends Switch<T>
       {
         RessourceUsed ressourceUsed = (RessourceUsed)theEObject;
         T result = caseRessourceUsed(ressourceUsed);
-        if (result == null) result = caseProcessElement(ressourceUsed);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }

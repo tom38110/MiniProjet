@@ -6,7 +6,6 @@ package fr.n7.pDL1.impl;
 import fr.n7.pDL1.PDL1Package;
 import fr.n7.pDL1.Ressource;
 import fr.n7.pDL1.RessourceUsed;
-import fr.n7.pDL1.WorkDefinition;
 
 import org.eclipse.emf.common.notify.Notification;
 
@@ -14,6 +13,7 @@ import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -23,25 +23,14 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link fr.n7.pDL1.impl.RessourceUsedImpl#getWorkdefinition <em>Workdefinition</em>}</li>
  *   <li>{@link fr.n7.pDL1.impl.RessourceUsedImpl#getOcc <em>Occ</em>}</li>
- *   <li>{@link fr.n7.pDL1.impl.RessourceUsedImpl#getRessources <em>Ressources</em>}</li>
+ *   <li>{@link fr.n7.pDL1.impl.RessourceUsedImpl#getRessourceUsed <em>Ressource Used</em>}</li>
  * </ul>
  *
  * @generated
  */
-public class RessourceUsedImpl extends ProcessElementImpl implements RessourceUsed
+public class RessourceUsedImpl extends MinimalEObjectImpl.Container implements RessourceUsed
 {
-  /**
-   * The cached value of the '{@link #getWorkdefinition() <em>Workdefinition</em>}' reference.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getWorkdefinition()
-   * @generated
-   * @ordered
-   */
-  protected WorkDefinition workdefinition;
-
   /**
    * The default value of the '{@link #getOcc() <em>Occ</em>}' attribute.
    * <!-- begin-user-doc -->
@@ -63,14 +52,14 @@ public class RessourceUsedImpl extends ProcessElementImpl implements RessourceUs
   protected int occ = OCC_EDEFAULT;
 
   /**
-   * The cached value of the '{@link #getRessources() <em>Ressources</em>}' reference.
+   * The cached value of the '{@link #getRessourceUsed() <em>Ressource Used</em>}' reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getRessources()
+   * @see #getRessourceUsed()
    * @generated
    * @ordered
    */
-  protected Ressource ressources;
+  protected Ressource ressourceUsed;
 
   /**
    * <!-- begin-user-doc -->
@@ -91,51 +80,6 @@ public class RessourceUsedImpl extends ProcessElementImpl implements RessourceUs
   protected EClass eStaticClass()
   {
     return PDL1Package.Literals.RESSOURCE_USED;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public WorkDefinition getWorkdefinition()
-  {
-    if (workdefinition != null && workdefinition.eIsProxy())
-    {
-      InternalEObject oldWorkdefinition = (InternalEObject)workdefinition;
-      workdefinition = (WorkDefinition)eResolveProxy(oldWorkdefinition);
-      if (workdefinition != oldWorkdefinition)
-      {
-        if (eNotificationRequired())
-          eNotify(new ENotificationImpl(this, Notification.RESOLVE, PDL1Package.RESSOURCE_USED__WORKDEFINITION, oldWorkdefinition, workdefinition));
-      }
-    }
-    return workdefinition;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public WorkDefinition basicGetWorkdefinition()
-  {
-    return workdefinition;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public void setWorkdefinition(WorkDefinition newWorkdefinition)
-  {
-    WorkDefinition oldWorkdefinition = workdefinition;
-    workdefinition = newWorkdefinition;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, PDL1Package.RESSOURCE_USED__WORKDEFINITION, oldWorkdefinition, workdefinition));
   }
 
   /**
@@ -169,19 +113,19 @@ public class RessourceUsedImpl extends ProcessElementImpl implements RessourceUs
    * @generated
    */
   @Override
-  public Ressource getRessources()
+  public Ressource getRessourceUsed()
   {
-    if (ressources != null && ressources.eIsProxy())
+    if (ressourceUsed != null && ressourceUsed.eIsProxy())
     {
-      InternalEObject oldRessources = (InternalEObject)ressources;
-      ressources = (Ressource)eResolveProxy(oldRessources);
-      if (ressources != oldRessources)
+      InternalEObject oldRessourceUsed = (InternalEObject)ressourceUsed;
+      ressourceUsed = (Ressource)eResolveProxy(oldRessourceUsed);
+      if (ressourceUsed != oldRessourceUsed)
       {
         if (eNotificationRequired())
-          eNotify(new ENotificationImpl(this, Notification.RESOLVE, PDL1Package.RESSOURCE_USED__RESSOURCES, oldRessources, ressources));
+          eNotify(new ENotificationImpl(this, Notification.RESOLVE, PDL1Package.RESSOURCE_USED__RESSOURCE_USED, oldRessourceUsed, ressourceUsed));
       }
     }
-    return ressources;
+    return ressourceUsed;
   }
 
   /**
@@ -189,9 +133,9 @@ public class RessourceUsedImpl extends ProcessElementImpl implements RessourceUs
    * <!-- end-user-doc -->
    * @generated
    */
-  public Ressource basicGetRessources()
+  public Ressource basicGetRessourceUsed()
   {
-    return ressources;
+    return ressourceUsed;
   }
 
   /**
@@ -200,12 +144,12 @@ public class RessourceUsedImpl extends ProcessElementImpl implements RessourceUs
    * @generated
    */
   @Override
-  public void setRessources(Ressource newRessources)
+  public void setRessourceUsed(Ressource newRessourceUsed)
   {
-    Ressource oldRessources = ressources;
-    ressources = newRessources;
+    Ressource oldRessourceUsed = ressourceUsed;
+    ressourceUsed = newRessourceUsed;
     if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, PDL1Package.RESSOURCE_USED__RESSOURCES, oldRessources, ressources));
+      eNotify(new ENotificationImpl(this, Notification.SET, PDL1Package.RESSOURCE_USED__RESSOURCE_USED, oldRessourceUsed, ressourceUsed));
   }
 
   /**
@@ -218,14 +162,11 @@ public class RessourceUsedImpl extends ProcessElementImpl implements RessourceUs
   {
     switch (featureID)
     {
-      case PDL1Package.RESSOURCE_USED__WORKDEFINITION:
-        if (resolve) return getWorkdefinition();
-        return basicGetWorkdefinition();
       case PDL1Package.RESSOURCE_USED__OCC:
         return getOcc();
-      case PDL1Package.RESSOURCE_USED__RESSOURCES:
-        if (resolve) return getRessources();
-        return basicGetRessources();
+      case PDL1Package.RESSOURCE_USED__RESSOURCE_USED:
+        if (resolve) return getRessourceUsed();
+        return basicGetRessourceUsed();
     }
     return super.eGet(featureID, resolve, coreType);
   }
@@ -240,14 +181,11 @@ public class RessourceUsedImpl extends ProcessElementImpl implements RessourceUs
   {
     switch (featureID)
     {
-      case PDL1Package.RESSOURCE_USED__WORKDEFINITION:
-        setWorkdefinition((WorkDefinition)newValue);
-        return;
       case PDL1Package.RESSOURCE_USED__OCC:
         setOcc((Integer)newValue);
         return;
-      case PDL1Package.RESSOURCE_USED__RESSOURCES:
-        setRessources((Ressource)newValue);
+      case PDL1Package.RESSOURCE_USED__RESSOURCE_USED:
+        setRessourceUsed((Ressource)newValue);
         return;
     }
     super.eSet(featureID, newValue);
@@ -263,14 +201,11 @@ public class RessourceUsedImpl extends ProcessElementImpl implements RessourceUs
   {
     switch (featureID)
     {
-      case PDL1Package.RESSOURCE_USED__WORKDEFINITION:
-        setWorkdefinition((WorkDefinition)null);
-        return;
       case PDL1Package.RESSOURCE_USED__OCC:
         setOcc(OCC_EDEFAULT);
         return;
-      case PDL1Package.RESSOURCE_USED__RESSOURCES:
-        setRessources((Ressource)null);
+      case PDL1Package.RESSOURCE_USED__RESSOURCE_USED:
+        setRessourceUsed((Ressource)null);
         return;
     }
     super.eUnset(featureID);
@@ -286,12 +221,10 @@ public class RessourceUsedImpl extends ProcessElementImpl implements RessourceUs
   {
     switch (featureID)
     {
-      case PDL1Package.RESSOURCE_USED__WORKDEFINITION:
-        return workdefinition != null;
       case PDL1Package.RESSOURCE_USED__OCC:
         return occ != OCC_EDEFAULT;
-      case PDL1Package.RESSOURCE_USED__RESSOURCES:
-        return ressources != null;
+      case PDL1Package.RESSOURCE_USED__RESSOURCE_USED:
+        return ressourceUsed != null;
     }
     return super.eIsSet(featureID);
   }

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:petrinet="http://petrinet">
+  <petrinet:PetriNet/>
+  <petrinet:PetriNet>
+    <nodes xsi:type="petrinet:Place" name="Concevoir_NotStarted" jeton="1"/>
+    <nodes xsi:type="petrinet:Place" name="Concevoir_Started"/>
+    <nodes xsi:type="petrinet:Place" name="Concevoir_Running"/>
+    <nodes xsi:type="petrinet:Place" name="Concevoir_Finished"/>
+    <nodes xsi:type="petrinet:Transition" name="Concevoir_start"/>
+    <nodes xsi:type="petrinet:Transition" name="Concevoir_finish"/>
+    <nodes xsi:type="petrinet:Place" name="Programmer_NotStarted" jeton="1"/>
+    <nodes xsi:type="petrinet:Place" name="Programmer_Started"/>
+    <nodes xsi:type="petrinet:Place" name="Programmer_Running"/>
+    <nodes xsi:type="petrinet:Place" name="Programmer_Finished"/>
+    <nodes xsi:type="petrinet:Transition" name="Programmer_start"/>
+    <nodes xsi:type="petrinet:Transition" name="Programmer_finish"/>
+    <nodes xsi:type="petrinet:Place" name="Documenter_NotStarted" jeton="1"/>
+    <nodes xsi:type="petrinet:Place" name="Documenter_Started"/>
+    <nodes xsi:type="petrinet:Place" name="Documenter_Running"/>
+    <nodes xsi:type="petrinet:Place" name="Documenter_Finished"/>
+    <nodes xsi:type="petrinet:Transition" name="Documenter_start"/>
+    <nodes xsi:type="petrinet:Transition" name="Documenter_finish"/>
+    <nodes xsi:type="petrinet:Place" name="Tester_NotStarted" jeton="1"/>
+    <nodes xsi:type="petrinet:Place" name="Tester_Started"/>
+    <nodes xsi:type="petrinet:Place" name="Tester_Running"/>
+    <nodes xsi:type="petrinet:Place" name="Tester_Finished"/>
+    <nodes xsi:type="petrinet:Transition" name="Tester_start"/>
+    <nodes xsi:type="petrinet:Transition" name="Tester_finish"/>
+    <nodes xsi:type="petrinet:Place" name="concepteur" jeton="3"/>
+    <nodes xsi:type="petrinet:Place" name="developpeur" jeton="2"/>
+    <nodes xsi:type="petrinet:Place" name="machine" jeton="4"/>
+    <nodes xsi:type="petrinet:Place" name="redacteur" jeton="1"/>
+    <nodes xsi:type="petrinet:Place" name="testeur" jeton="2"/>
+    <arcs weight="1" source="/1/@nodes.0" target="/1/@nodes.4"/>
+    <arcs weight="1" source="/1/@nodes.4" target="/1/@nodes.1" direction="transitionToPlace"/>
+    <arcs weight="1" source="/1/@nodes.4" target="/1/@nodes.2" direction="transitionToPlace"/>
+    <arcs weight="1" source="/1/@nodes.2" target="/1/@nodes.5"/>
+    <arcs weight="1" source="/1/@nodes.5" target="/1/@nodes.3" direction="transitionToPlace"/>
+    <arcs weight="2" target="/1/@nodes.4"/>
+    <arcs weight="2" source="/1/@nodes.5" direction="transitionToPlace"/>
+    <arcs weight="2" target="/1/@nodes.4"/>
+    <arcs weight="2" source="/1/@nodes.5" direction="transitionToPlace"/>
+    <arcs weight="1" source="/1/@nodes.6" target="/1/@nodes.10"/>
+    <arcs weight="1" source="/1/@nodes.10" target="/1/@nodes.7" direction="transitionToPlace"/>
+    <arcs weight="1" source="/1/@nodes.10" target="/1/@nodes.8" direction="transitionToPlace"/>
+    <arcs weight="1" source="/1/@nodes.8" target="/1/@nodes.11"/>
+    <arcs weight="1" source="/1/@nodes.11" target="/1/@nodes.9" direction="transitionToPlace"/>
+    <arcs weight="2" target="/1/@nodes.10"/>
+    <arcs weight="2" source="/1/@nodes.11" direction="transitionToPlace"/>
+    <arcs weight="3" target="/1/@nodes.10"/>
+    <arcs weight="3" source="/1/@nodes.11" direction="transitionToPlace"/>
+    <arcs weight="1" source="/1/@nodes.12" target="/1/@nodes.16"/>
+    <arcs weight="1" source="/1/@nodes.16" target="/1/@nodes.13" direction="transitionToPlace"/>
+    <arcs weight="1" source="/1/@nodes.16" target="/1/@nodes.14" direction="transitionToPlace"/>
+    <arcs weight="1" source="/1/@nodes.14" target="/1/@nodes.17"/>
+    <arcs weight="1" source="/1/@nodes.17" target="/1/@nodes.15" direction="transitionToPlace"/>
+    <arcs weight="1" target="/1/@nodes.16"/>
+    <arcs weight="1" source="/1/@nodes.17" direction="transitionToPlace"/>
+    <arcs weight="1" target="/1/@nodes.16"/>
+    <arcs weight="1" source="/1/@nodes.17" direction="transitionToPlace"/>
+    <arcs weight="1" source="/1/@nodes.18" target="/1/@nodes.22"/>
+    <arcs weight="1" source="/1/@nodes.22" target="/1/@nodes.19" direction="transitionToPlace"/>
+    <arcs weight="1" source="/1/@nodes.22" target="/1/@nodes.20" direction="transitionToPlace"/>
+    <arcs weight="1" source="/1/@nodes.20" target="/1/@nodes.23"/>
+    <arcs weight="1" source="/1/@nodes.23" target="/1/@nodes.21" direction="transitionToPlace"/>
+    <arcs weight="2" target="/1/@nodes.22"/>
+    <arcs weight="2" source="/1/@nodes.23" direction="transitionToPlace"/>
+    <arcs weight="1" target="/1/@nodes.22"/>
+    <arcs weight="1" source="/1/@nodes.23" direction="transitionToPlace"/>
+    <arcs weight="1" kind="read" source="/1/@nodes.3" target="/1/@nodes.10"/>
+    <arcs weight="1" kind="read" source="/1/@nodes.1" target="/1/@nodes.22"/>
+    <arcs weight="1" kind="read" source="/1/@nodes.3" target="/1/@nodes.23"/>
+    <arcs weight="1" kind="read" source="/1/@nodes.7" target="/1/@nodes.16"/>
+    <arcs weight="1" kind="read" source="/1/@nodes.9" target="/1/@nodes.17"/>
+    <arcs weight="1" kind="read" source="/1/@nodes.9" target="/1/@nodes.23"/>
+  </petrinet:PetriNet>
+  <petrinet:PetriNet>
+    <nodes xsi:type="petrinet:Place" name="Concevoir_NotStarted" jeton="1"/>
+    <nodes xsi:type="petrinet:Place" name="Concevoir_Started"/>
+    <nodes xsi:type="petrinet:Place" name="Concevoir_Running"/>
+    <nodes xsi:type="petrinet:Place" name="Concevoir_Finished"/>
+    <nodes xsi:type="petrinet:Transition" name="Concevoir_start"/>
+    <nodes xsi:type="petrinet:Transition" name="Concevoir_finish"/>
+    <nodes xsi:type="petrinet:Place" name="Programmer_NotStarted" jeton="1"/>
+    <nodes xsi:type="petrinet:Place" name="Programmer_Started"/>
+    <nodes xsi:type="petrinet:Place" name="Programmer_Running"/>
+    <nodes xsi:type="petrinet:Place" name="Programmer_Finished"/>
+    <nodes xsi:type="petrinet:Transition" name="Programmer_start"/>
+    <nodes xsi:type="petrinet:Transition" name="Programmer_finish"/>
+    <nodes xsi:type="petrinet:Place" name="Documenter_NotStarted" jeton="1"/>
+    <nodes xsi:type="petrinet:Place" name="Documenter_Started"/>
+    <nodes xsi:type="petrinet:Place" name="Documenter_Running"/>
+    <nodes xsi:type="petrinet:Place" name="Documenter_Finished"/>
+    <nodes xsi:type="petrinet:Transition" name="Documenter_start"/>
+    <nodes xsi:type="petrinet:Transition" name="Documenter_finish"/>
+    <nodes xsi:type="petrinet:Place" name="Tester_NotStarted" jeton="1"/>
+    <nodes xsi:type="petrinet:Place" name="Tester_Started"/>
+    <nodes xsi:type="petrinet:Place" name="Tester_Running"/>
+    <nodes xsi:type="petrinet:Place" name="Tester_Finished"/>
+    <nodes xsi:type="petrinet:Transition" name="Tester_start"/>
+    <nodes xsi:type="petrinet:Transition" name="Tester_finish"/>
+    <nodes xsi:type="petrinet:Place" name="concepteur" jeton="3"/>
+    <nodes xsi:type="petrinet:Place" name="developpeur" jeton="2"/>
+    <nodes xsi:type="petrinet:Place" name="machine" jeton="4"/>
+    <nodes xsi:type="petrinet:Place" name="redacteur" jeton="1"/>
+    <nodes xsi:type="petrinet:Place" name="testeur" jeton="2"/>
+    <arcs weight="1" source="/2/@nodes.0" target="/2/@nodes.4"/>
+    <arcs weight="1" source="/2/@nodes.4" target="/2/@nodes.1" direction="transitionToPlace"/>
+    <arcs weight="1" source="/2/@nodes.4" target="/2/@nodes.2" direction="transitionToPlace"/>
+    <arcs weight="1" source="/2/@nodes.2" target="/2/@nodes.5"/>
+    <arcs weight="1" source="/2/@nodes.5" target="/2/@nodes.3" direction="transitionToPlace"/>
+    <arcs weight="2" target="/2/@nodes.4"/>
+    <arcs weight="2" source="/2/@nodes.5" direction="transitionToPlace"/>
+    <arcs weight="2" target="/2/@nodes.4"/>
+    <arcs weight="2" source="/2/@nodes.5" direction="transitionToPlace"/>
+    <arcs weight="1" source="/2/@nodes.6" target="/2/@nodes.10"/>
+    <arcs weight="1" source="/2/@nodes.10" target="/2/@nodes.7" direction="transitionToPlace"/>
+    <arcs weight="1" source="/2/@nodes.10" target="/2/@nodes.8" direction="transitionToPlace"/>
+    <arcs weight="1" source="/2/@nodes.8" target="/2/@nodes.11"/>
+    <arcs weight="1" source="/2/@nodes.11" target="/2/@nodes.9" direction="transitionToPlace"/>
+    <arcs weight="2" target="/2/@nodes.10"/>
+    <arcs weight="2" source="/2/@nodes.11" direction="transitionToPlace"/>
+    <arcs weight="3" target="/2/@nodes.10"/>
+    <arcs weight="3" source="/2/@nodes.11" direction="transitionToPlace"/>
+    <arcs weight="1" source="/2/@nodes.12" target="/2/@nodes.16"/>
+    <arcs weight="1" source="/2/@nodes.16" target="/2/@nodes.13" direction="transitionToPlace"/>
+    <arcs weight="1" source="/2/@nodes.16" target="/2/@nodes.14" direction="transitionToPlace"/>
+    <arcs weight="1" source="/2/@nodes.14" target="/2/@nodes.17"/>
+    <arcs weight="1" source="/2/@nodes.17" target="/2/@nodes.15" direction="transitionToPlace"/>
+    <arcs weight="1" target="/2/@nodes.16"/>
+    <arcs weight="1" source="/2/@nodes.17" direction="transitionToPlace"/>
+    <arcs weight="1" target="/2/@nodes.16"/>
+    <arcs weight="1" source="/2/@nodes.17" direction="transitionToPlace"/>
+    <arcs weight="1" source="/2/@nodes.18" target="/2/@nodes.22"/>
+    <arcs weight="1" source="/2/@nodes.22" target="/2/@nodes.19" direction="transitionToPlace"/>
+    <arcs weight="1" source="/2/@nodes.22" target="/2/@nodes.20" direction="transitionToPlace"/>
+    <arcs weight="1" source="/2/@nodes.20" target="/2/@nodes.23"/>
+    <arcs weight="1" source="/2/@nodes.23" target="/2/@nodes.21" direction="transitionToPlace"/>
+    <arcs weight="2" target="/2/@nodes.22"/>
+    <arcs weight="2" source="/2/@nodes.23" direction="transitionToPlace"/>
+    <arcs weight="1" target="/2/@nodes.22"/>
+    <arcs weight="1" source="/2/@nodes.23" direction="transitionToPlace"/>
+    <arcs weight="1" kind="read" source="/2/@nodes.3" target="/2/@nodes.10"/>
+    <arcs weight="1" kind="read" source="/2/@nodes.1" target="/2/@nodes.22"/>
+    <arcs weight="1" kind="read" source="/2/@nodes.3" target="/2/@nodes.23"/>
+    <arcs weight="1" kind="read" source="/2/@nodes.7" target="/2/@nodes.16"/>
+    <arcs weight="1" kind="read" source="/2/@nodes.9" target="/2/@nodes.17"/>
+    <arcs weight="1" kind="read" source="/2/@nodes.9" target="/2/@nodes.23"/>
+  </petrinet:PetriNet>
+</xmi:XMI>

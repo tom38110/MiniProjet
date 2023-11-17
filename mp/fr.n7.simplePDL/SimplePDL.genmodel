@@ -39,7 +39,7 @@
     <genClasses ecoreClass="SimplePDL.ecore#//RessourceUsed">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute SimplePDL.ecore#//RessourceUsed/occ"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference SimplePDL.ecore#//RessourceUsed/ressources"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference SimplePDL.ecore#//RessourceUsed/workdefinition"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference SimplePDL.ecore#//RessourceUsed/workdefinition"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>

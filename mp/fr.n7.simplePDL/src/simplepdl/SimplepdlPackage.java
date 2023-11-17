@@ -371,7 +371,7 @@ public interface SimplepdlPackage extends EPackage {
 	int RESSOURCE_USED__RESSOURCES = 1;
 
 	/**
-	 * The feature id for the '<em><b>Workdefinition</b></em>' reference.
+	 * The feature id for the '<em><b>Workdefinition</b></em>' container reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -644,10 +644,10 @@ public interface SimplepdlPackage extends EPackage {
 	EReference getRessourceUsed_Ressources();
 
 	/**
-	 * Returns the meta object for the reference '{@link simplepdl.RessourceUsed#getWorkdefinition <em>Workdefinition</em>}'.
+	 * Returns the meta object for the container reference '{@link simplepdl.RessourceUsed#getWorkdefinition <em>Workdefinition</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Workdefinition</em>'.
+	 * @return the meta object for the container reference '<em>Workdefinition</em>'.
 	 * @see simplepdl.RessourceUsed#getWorkdefinition()
 	 * @see #getRessourceUsed()
 	 * @generated
@@ -878,7 +878,7 @@ public interface SimplepdlPackage extends EPackage {
 		EReference RESSOURCE_USED__RESSOURCES = eINSTANCE.getRessourceUsed_Ressources();
 
 		/**
-		 * The meta object literal for the '<em><b>Workdefinition</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Workdefinition</b></em>' container reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated

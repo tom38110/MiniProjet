@@ -3,6 +3,7 @@
  */
 package fr.n7.pDL1;
 
+import org.eclipse.emf.ecore.EObject;
 
 /**
  * <!-- begin-user-doc -->
@@ -13,39 +14,16 @@ package fr.n7.pDL1;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link fr.n7.pDL1.RessourceUsed#getWorkdefinition <em>Workdefinition</em>}</li>
  *   <li>{@link fr.n7.pDL1.RessourceUsed#getOcc <em>Occ</em>}</li>
- *   <li>{@link fr.n7.pDL1.RessourceUsed#getRessources <em>Ressources</em>}</li>
+ *   <li>{@link fr.n7.pDL1.RessourceUsed#getRessourceUsed <em>Ressource Used</em>}</li>
  * </ul>
  *
  * @see fr.n7.pDL1.PDL1Package#getRessourceUsed()
  * @model
  * @generated
  */
-public interface RessourceUsed extends ProcessElement
+public interface RessourceUsed extends EObject
 {
-  /**
-   * Returns the value of the '<em><b>Workdefinition</b></em>' reference.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the value of the '<em>Workdefinition</em>' reference.
-   * @see #setWorkdefinition(WorkDefinition)
-   * @see fr.n7.pDL1.PDL1Package#getRessourceUsed_Workdefinition()
-   * @model
-   * @generated
-   */
-  WorkDefinition getWorkdefinition();
-
-  /**
-   * Sets the value of the '{@link fr.n7.pDL1.RessourceUsed#getWorkdefinition <em>Workdefinition</em>}' reference.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Workdefinition</em>' reference.
-   * @see #getWorkdefinition()
-   * @generated
-   */
-  void setWorkdefinition(WorkDefinition value);
-
   /**
    * Returns the value of the '<em><b>Occ</b></em>' attribute.
    * <!-- begin-user-doc -->
@@ -69,25 +47,25 @@ public interface RessourceUsed extends ProcessElement
   void setOcc(int value);
 
   /**
-   * Returns the value of the '<em><b>Ressources</b></em>' reference.
+   * Returns the value of the '<em><b>Ressource Used</b></em>' reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Ressources</em>' reference.
-   * @see #setRessources(Ressource)
-   * @see fr.n7.pDL1.PDL1Package#getRessourceUsed_Ressources()
+   * @return the value of the '<em>Ressource Used</em>' reference.
+   * @see #setRessourceUsed(Ressource)
+   * @see fr.n7.pDL1.PDL1Package#getRessourceUsed_RessourceUsed()
    * @model
    * @generated
    */
-  Ressource getRessources();
+  Ressource getRessourceUsed();
 
   /**
-   * Sets the value of the '{@link fr.n7.pDL1.RessourceUsed#getRessources <em>Ressources</em>}' reference.
+   * Sets the value of the '{@link fr.n7.pDL1.RessourceUsed#getRessourceUsed <em>Ressource Used</em>}' reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Ressources</em>' reference.
-   * @see #getRessources()
+   * @param value the new value of the '<em>Ressource Used</em>' reference.
+   * @see #getRessourceUsed()
    * @generated
    */
-  void setRessources(Ressource value);
+  void setRessourceUsed(Ressource value);
 
 } // RessourceUsed

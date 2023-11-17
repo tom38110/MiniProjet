@@ -147,16 +147,10 @@
       <tags>categoryTag:Help</tags>
     </sharedElements>
     <sharedElements xsi:type="advanced:Area" xmi:id="_ac0Y4H_TEe6_qKSI5vHg5w" elementId="org.eclipse.ui.editorss" selectedElement="_ac0Y4X_TEe6_qKSI5vHg5w">
-      <children xsi:type="basic:PartStack" xmi:id="_ac0Y4X_TEe6_qKSI5vHg5w" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_RsII4IJQEe61e-G2zPpQNQ">
+      <children xsi:type="basic:PartStack" xmi:id="_ac0Y4X_TEe6_qKSI5vHg5w" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_BiVBIIR8Ee6pY_nPgpsjsw">
         <tags>org.eclipse.e4.primaryDataStack</tags>
         <tags>EditorStack</tags>
         <tags>active</tags>
-        <children xsi:type="basic:Part" xmi:id="_EtWmUH_UEe6_qKSI5vHg5w" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="ex1.pdl1" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;fr.n7.PDL1&quot; name=&quot;ex1.pdl1&quot; partName=&quot;ex1.pdl1&quot; title=&quot;ex1.pdl1&quot; tooltip=&quot;fr.n7.simplepdl.exemples/ex1.pdl1&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/fr.n7.simplepdl.exemples/ex1.pdl1&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;73&quot; selectionOffset=&quot;0&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>removeOnHide</tags>
-          <tags>fr.n7.PDL1</tags>
-        </children>
         <children xsi:type="basic:Part" xmi:id="_Maq6gIJJEe68q6JncKlSJw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="ex2.pdl" closeable="true">
           <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;fr.n7.PDL&quot; name=&quot;ex2.pdl&quot; partName=&quot;ex2.pdl&quot; title=&quot;ex2.pdl&quot; tooltip=&quot;fr.n7.simplepdl.exemples2/ex2.pdl&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/fr.n7.simplepdl.exemples2/ex2.pdl&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;52&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
@@ -164,12 +158,12 @@
           <tags>fr.n7.PDL</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_XhycEIJNEe68daa1ANaARA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="processExample.pdl1" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;fr.n7.PDL1&quot; name=&quot;processExample.pdl1&quot; partName=&quot;processExample.pdl1&quot; title=&quot;processExample.pdl1&quot; tooltip=&quot;fr.n7.simplepdlxtext.exemples/processExample.pdl1&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/fr.n7.simplepdlxtext.exemples/processExample.pdl1&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;588&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;fr.n7.PDL1&quot; name=&quot;processExample.pdl1&quot; partName=&quot;processExample.pdl1&quot; title=&quot;processExample.pdl1&quot; tooltip=&quot;fr.n7.simplepdlxtext.exemples/processExample.pdl1&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/fr.n7.simplepdlxtext.exemples/processExample.pdl1&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;214&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>removeOnHide</tags>
           <tags>fr.n7.PDL1</tags>
         </children>
-        <children xsi:type="basic:Part" xmi:id="_RsII4IJQEe61e-G2zPpQNQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="processExample.pdl1" iconURI="platform:/plugin/org.eclipse.emf.ecore.editor/icons/full/obj16/EcoreModelFile.gif" closeable="true">
+        <children xsi:type="basic:Part" xmi:id="_BiVBIIR8Ee6pY_nPgpsjsw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="processExample.pdl1" iconURI="platform:/plugin/org.eclipse.emf.ecore.editor/icons/full/obj16/EcoreModelFile.gif" closeable="true">
           <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.emf.ecore.presentation.EcoreEditorID&quot; name=&quot;processExample.pdl1&quot; partName=&quot;processExample.pdl1&quot; title=&quot;processExample.pdl1&quot; tooltip=&quot;fr.n7.simplepdlxtext.exemples/processExample.pdl1&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/fr.n7.simplepdlxtext.exemples/processExample.pdl1&quot;/>&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>removeOnHide</tags>
@@ -270,7 +264,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_aZjpgH_TEe6_qKSI5vHg5w" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_5YEZ4IPVEe60n-F6bMU3Qw" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_aOQYnH_TEe6_qKSI5vHg5w"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_KsOk4IR8Ee6STdOoG9BxLQ" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_aOQYnH_TEe6_qKSI5vHg5w"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_aZjpgX_TEe6_qKSI5vHg5w" elementId="group.edit" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -298,7 +292,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_aZkQk3_TEe6_qKSI5vHg5w" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_5YG2IIPVEe60n-F6bMU3Qw" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_aOPxbH_TEe6_qKSI5vHg5w"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_KsRBIIR8Ee6STdOoG9BxLQ" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_aOPxbH_TEe6_qKSI5vHg5w"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_aZk3oH_TEe6_qKSI5vHg5w" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -2282,7 +2276,7 @@
   <addons xmi:id="_aN2I13_TEe6_qKSI5vHg5w" elementId="MinMax Addon" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.MinMaxAddon"/>
   <addons xmi:id="_aN2I2H_TEe6_qKSI5vHg5w" elementId="org.eclipse.ui.workbench.addon.0" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
   <addons xmi:id="_aN82cH_TEe6_qKSI5vHg5w" elementId="SplitterAddon" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.splitteraddon.SplitterAddon"/>
-  <addons xmi:id="_5OXERYPVEe60n-F6bMU3Qw" elementId="org.eclipse.ui.ide.addon.0" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
+  <addons xmi:id="_IYS0IKimEeS11vbz3f9ezw" elementId="org.eclipse.ui.ide.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
   <addons xmi:id="_dz0JgGOlEeSMMaPQU2nlzw" elementId="org.eclipse.ui.ide.application.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.ui.ide.application/org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon"/>
   <categories xmi:id="_aOLf8H_TEe6_qKSI5vHg5w" elementId="org.eclipse.team.ui.category.team" name="Team" description="Actions that apply when working with a Team"/>
   <categories xmi:id="_aOLf8X_TEe6_qKSI5vHg5w" elementId="org.eclipse.ui.category.views" name="Views" description="Commands for opening views"/>

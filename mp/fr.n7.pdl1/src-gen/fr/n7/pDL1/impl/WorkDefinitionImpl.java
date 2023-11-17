@@ -4,13 +4,23 @@
 package fr.n7.pDL1.impl;
 
 import fr.n7.pDL1.PDL1Package;
+import fr.n7.pDL1.RessourceUsed;
 import fr.n7.pDL1.WorkDefinition;
 
+import java.util.Collection;
+
 import org.eclipse.emf.common.notify.Notification;
+import org.eclipse.emf.common.notify.NotificationChain;
+
+import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
+
+import org.eclipse.emf.ecore.util.EObjectContainmentEList;
+import org.eclipse.emf.ecore.util.InternalEList;
 
 /**
  * <!-- begin-user-doc -->
@@ -21,6 +31,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * </p>
  * <ul>
  *   <li>{@link fr.n7.pDL1.impl.WorkDefinitionImpl#getName <em>Name</em>}</li>
+ *   <li>{@link fr.n7.pDL1.impl.WorkDefinitionImpl#getRessourcesUsed <em>Ressources Used</em>}</li>
  * </ul>
  *
  * @generated
@@ -46,6 +57,16 @@ public class WorkDefinitionImpl extends ProcessElementImpl implements WorkDefini
    * @ordered
    */
   protected String name = NAME_EDEFAULT;
+
+  /**
+   * The cached value of the '{@link #getRessourcesUsed() <em>Ressources Used</em>}' containment reference list.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getRessourcesUsed()
+   * @generated
+   * @ordered
+   */
+  protected EList<RessourceUsed> ressourcesUsed;
 
   /**
    * <!-- begin-user-doc -->
@@ -99,12 +120,45 @@ public class WorkDefinitionImpl extends ProcessElementImpl implements WorkDefini
    * @generated
    */
   @Override
+  public EList<RessourceUsed> getRessourcesUsed()
+  {
+    if (ressourcesUsed == null)
+    {
+      ressourcesUsed = new EObjectContainmentEList<RessourceUsed>(RessourceUsed.class, this, PDL1Package.WORK_DEFINITION__RESSOURCES_USED);
+    }
+    return ressourcesUsed;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
+  {
+    switch (featureID)
+    {
+      case PDL1Package.WORK_DEFINITION__RESSOURCES_USED:
+        return ((InternalEList<?>)getRessourcesUsed()).basicRemove(otherEnd, msgs);
+    }
+    return super.eInverseRemove(otherEnd, featureID, msgs);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
   public Object eGet(int featureID, boolean resolve, boolean coreType)
   {
     switch (featureID)
     {
       case PDL1Package.WORK_DEFINITION__NAME:
         return getName();
+      case PDL1Package.WORK_DEFINITION__RESSOURCES_USED:
+        return getRessourcesUsed();
     }
     return super.eGet(featureID, resolve, coreType);
   }
@@ -114,6 +168,7 @@ public class WorkDefinitionImpl extends ProcessElementImpl implements WorkDefini
    * <!-- end-user-doc -->
    * @generated
    */
+  @SuppressWarnings("unchecked")
   @Override
   public void eSet(int featureID, Object newValue)
   {
@@ -121,6 +176,10 @@ public class WorkDefinitionImpl extends ProcessElementImpl implements WorkDefini
     {
       case PDL1Package.WORK_DEFINITION__NAME:
         setName((String)newValue);
+        return;
+      case PDL1Package.WORK_DEFINITION__RESSOURCES_USED:
+        getRessourcesUsed().clear();
+        getRessourcesUsed().addAll((Collection<? extends RessourceUsed>)newValue);
         return;
     }
     super.eSet(featureID, newValue);
@@ -139,6 +198,9 @@ public class WorkDefinitionImpl extends ProcessElementImpl implements WorkDefini
       case PDL1Package.WORK_DEFINITION__NAME:
         setName(NAME_EDEFAULT);
         return;
+      case PDL1Package.WORK_DEFINITION__RESSOURCES_USED:
+        getRessourcesUsed().clear();
+        return;
     }
     super.eUnset(featureID);
   }
@@ -155,6 +217,8 @@ public class WorkDefinitionImpl extends ProcessElementImpl implements WorkDefini
     {
       case PDL1Package.WORK_DEFINITION__NAME:
         return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
+      case PDL1Package.WORK_DEFINITION__RESSOURCES_USED:
+        return ressourcesUsed != null && !ressourcesUsed.isEmpty();
     }
     return super.eIsSet(featureID);
   }

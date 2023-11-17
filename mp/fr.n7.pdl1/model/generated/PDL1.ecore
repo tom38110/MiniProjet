@@ -9,6 +9,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="ProcessElement"/>
   <eClassifiers xsi:type="ecore:EClass" name="WorkDefinition" eSuperTypes="#//ProcessElement">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ressourcesUsed" upperBound="-1"
+        eType="#//RessourceUsed" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="WorkSequence" eSuperTypes="#//ProcessElement">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="linkType" eType="#//WorkSequenceType"/>
@@ -28,9 +30,8 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="quantity" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="RessourceUsed" eSuperTypes="#//ProcessElement">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="workdefinition" eType="#//WorkDefinition"/>
+  <eClassifiers xsi:type="ecore:EClass" name="RessourceUsed">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="occ" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="ressources" eType="#//Ressource"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ressourceUsed" eType="#//Ressource"/>
   </eClassifiers>
 </ecore:EPackage>

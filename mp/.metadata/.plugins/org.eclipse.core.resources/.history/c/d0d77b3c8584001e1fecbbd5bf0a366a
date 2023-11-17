@@ -1,0 +1,136 @@
+/**
+ * 
+ */
+package fr.n7.simplePDL2petriNet;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import org.eclipse.emf.common.util.URI;
+import org.eclipse.emf.ecore.resource.Resource;
+import org.eclipse.emf.ecore.resource.ResourceSet;
+import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
+import org.eclipse.emf.ecore.xmi.impl.XMIResourceFactoryImpl;
+
+import petrinet.*;
+import simplepdl.*;
+import simplepdl.Process;
+
+/**
+ * @author taudard
+ *
+ */
+public class SimplePDL2PetriNet {
+
+	/**
+	* @param args
+	*/
+	static PetrinetFactory myFactory;
+	static PetriNet petri;
+	
+	static Map<String, Place> NotStarted = new HashMap<String, Place>();
+	
+	private static void WD2PetriNet(WorkDefinition wd) {
+		// Création des places
+		Place placeNotStarted = myFactory.createPlace();
+		Place placeStarted = myFactory.createPlace();
+		Place placeRunning = myFactory.createPlace();
+		Place placeFinished = myFactory.createPlace();
+
+		placeNotStarted.setName(wd.getName() + "_NotStarted");
+		placeStarted.setName(wd.getName() + "_Started");
+		placeRunning.setName(wd.getName() + "_Running");
+		placeFinished.setName(wd.getName() + "_Finished");
+		
+		placeNotStarted.setJeton(1);
+		placeStarted.setJeton(0);
+		placeRunning.setJeton(0);
+		placeFinished.setJeton(0);
+
+		// Création des transitions
+		Transition transitionStart = myFactory.createTransition();
+		Transition transitionFinish = myFactory.createTransition();
+
+		transitionStart.setName(wd.getName() + "_start");
+		transitionFinish.setName(wd.getName() + "_finish");
+
+		// Création des arcs
+		Arc arcNS2Start = myFactory.createArc();
+		Arc arcStart2Started = myFactory.createArc();
+		Arc arcStart2Running = myFactory.createArc();
+		Arc arcRunning2Finish = myFactory.createArc();
+		Arc arcFinish2Finished = myFactory.createArc();
+
+		arcNS2Start.setSource(placeNotStarted);
+		arcNS2Start.setTarget(transitionStart);
+		arcNS2Start.setDirection(ArcDirection.PLACE_TO_TRANSITION);
+		arcNS2Start.setKind(ArcKind.NORMAL);
+		arcNS2Start.setWeight(1);
+	}
+	public static void main(String[] args) {
+		// Chargement des packages SimplePDL et PetriNet afin de l'enregistrer dans le registre d'Eclipse.
+		SimplepdlPackage simplePdlPackageInstance = SimplepdlPackage.eINSTANCE;
+		PetrinetPackage petriNetPackageInstance = PetrinetPackage.eINSTANCE;
+		
+		// Enregistrer l'extension ".xmi" comme devant être ouverte à
+		// l'aide d'un objet "XMIResourceFactoryImpl"
+		Resource.Factory.Registry reg = Resource.Factory.Registry.INSTANCE;
+		Map<String, Object> m = reg.getExtensionToFactoryMap();
+		m.put("xmi", new XMIResourceFactoryImpl());
+		
+		// Créer un objet resourceSetImpl qui contiendra une ressource EMF (notre modèle)
+		ResourceSet resSet = new ResourceSetImpl();
+
+		// Charger les ressources (notre modèle)
+		URI simplePDLmodelURI = URI.createURI("models/process_exemple.xmi");
+		Resource simplePDLResource = resSet.getResource(simplePDLmodelURI, true);
+		
+		// Créer le modèle de sortie 
+		URI petriNetmodelURI = URI.createURI("models/petriNet_exemple.xmi");
+		Resource petriNetResource = resSet.getResource(petriNetmodelURI, true);
+		
+		// La fabrique pour fabriquer les éléments de Petrinet
+	    PetrinetFactory myFactory = PetrinetFactory.eINSTANCE;
+	    
+		// Récupérer le premier élément du modèle (élément racine)
+		Process process = (Process) simplePDLResource.getContents().get(0);
+		
+		// Ajouter le Process dans le modÃ¨le
+		simplePDLResource.getContents().add(process);
+		
+		// Création du PetriNet
+		petri = myFactory.createPetriNet();
+		
+		/**
+		* Manipulation de notre instance
+		*/
+		// Accéder aux informations du processus chargé
+	    System.out.println("Processus : " + process.getName());
+	    // Naviguer dans les références
+	    Integer nbPE = process.getProcessElements().size();
+	    System.out.println("Nombre de ProcessElement dans " + process.getName() + " : " + nbPE);
+
+		// Afficher les sous-activités
+		System.out.println("Les sous-activités sont :");
+		for (Object o : process.getProcessElements()) {
+			if (o instanceof WorkDefinition) {
+				WorkDefinition wd = (WorkDefinition) o;
+				// cree 4 places
+				Place  p1 = myFactory.createPlace();
+				Place  p2 = myFactory.createPlace();
+				Place  p3 = myFactory.createPlace();
+				Place  p4 = myFactory.createPlace();
+				// cree 2 transition
+				Transition t1 = myFactory.createTransition();
+				Transition t2 = myFactory.createTransition();
+				// cree 5 arcs
+				Arc arc1 = myFactory.createArc();
+				Arc arc2 = myFactory.createArc();
+				Arc arc3 = myFactory.createArc();
+				Arc arc4 = myFactory.createArc();
+				Arc arc5 = myFactory.createArc();
+			}
+		}
+	}
+
+}

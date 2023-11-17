@@ -134,13 +134,22 @@ public interface PDL1Package extends EPackage
   int WORK_DEFINITION__NAME = PROCESS_ELEMENT_FEATURE_COUNT + 0;
 
   /**
+   * The feature id for the '<em><b>Ressources Used</b></em>' containment reference list.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int WORK_DEFINITION__RESSOURCES_USED = PROCESS_ELEMENT_FEATURE_COUNT + 1;
+
+  /**
    * The number of structural features of the '<em>Work Definition</em>' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int WORK_DEFINITION_FEATURE_COUNT = PROCESS_ELEMENT_FEATURE_COUNT + 1;
+  int WORK_DEFINITION_FEATURE_COUNT = PROCESS_ELEMENT_FEATURE_COUNT + 2;
 
   /**
    * The meta object id for the '{@link fr.n7.pDL1.impl.WorkSequenceImpl <em>Work Sequence</em>}' class.
@@ -264,31 +273,22 @@ public interface PDL1Package extends EPackage
   int RESSOURCE_USED = 6;
 
   /**
-   * The feature id for the '<em><b>Workdefinition</b></em>' reference.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int RESSOURCE_USED__WORKDEFINITION = PROCESS_ELEMENT_FEATURE_COUNT + 0;
-
-  /**
    * The feature id for the '<em><b>Occ</b></em>' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int RESSOURCE_USED__OCC = PROCESS_ELEMENT_FEATURE_COUNT + 1;
+  int RESSOURCE_USED__OCC = 0;
 
   /**
-   * The feature id for the '<em><b>Ressources</b></em>' reference.
+   * The feature id for the '<em><b>Ressource Used</b></em>' reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int RESSOURCE_USED__RESSOURCES = PROCESS_ELEMENT_FEATURE_COUNT + 2;
+  int RESSOURCE_USED__RESSOURCE_USED = 1;
 
   /**
    * The number of structural features of the '<em>Ressource Used</em>' class.
@@ -297,7 +297,7 @@ public interface PDL1Package extends EPackage
    * @generated
    * @ordered
    */
-  int RESSOURCE_USED_FEATURE_COUNT = PROCESS_ELEMENT_FEATURE_COUNT + 3;
+  int RESSOURCE_USED_FEATURE_COUNT = 2;
 
   /**
    * The meta object id for the '{@link fr.n7.pDL1.WorkSequenceType <em>Work Sequence Type</em>}' enum.
@@ -372,6 +372,17 @@ public interface PDL1Package extends EPackage
    * @generated
    */
   EAttribute getWorkDefinition_Name();
+
+  /**
+   * Returns the meta object for the containment reference list '{@link fr.n7.pDL1.WorkDefinition#getRessourcesUsed <em>Ressources Used</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the containment reference list '<em>Ressources Used</em>'.
+   * @see fr.n7.pDL1.WorkDefinition#getRessourcesUsed()
+   * @see #getWorkDefinition()
+   * @generated
+   */
+  EReference getWorkDefinition_RessourcesUsed();
 
   /**
    * Returns the meta object for class '{@link fr.n7.pDL1.WorkSequence <em>Work Sequence</em>}'.
@@ -480,17 +491,6 @@ public interface PDL1Package extends EPackage
   EClass getRessourceUsed();
 
   /**
-   * Returns the meta object for the reference '{@link fr.n7.pDL1.RessourceUsed#getWorkdefinition <em>Workdefinition</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the reference '<em>Workdefinition</em>'.
-   * @see fr.n7.pDL1.RessourceUsed#getWorkdefinition()
-   * @see #getRessourceUsed()
-   * @generated
-   */
-  EReference getRessourceUsed_Workdefinition();
-
-  /**
    * Returns the meta object for the attribute '{@link fr.n7.pDL1.RessourceUsed#getOcc <em>Occ</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -502,15 +502,15 @@ public interface PDL1Package extends EPackage
   EAttribute getRessourceUsed_Occ();
 
   /**
-   * Returns the meta object for the reference '{@link fr.n7.pDL1.RessourceUsed#getRessources <em>Ressources</em>}'.
+   * Returns the meta object for the reference '{@link fr.n7.pDL1.RessourceUsed#getRessourceUsed <em>Ressource Used</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the reference '<em>Ressources</em>'.
-   * @see fr.n7.pDL1.RessourceUsed#getRessources()
+   * @return the meta object for the reference '<em>Ressource Used</em>'.
+   * @see fr.n7.pDL1.RessourceUsed#getRessourceUsed()
    * @see #getRessourceUsed()
    * @generated
    */
-  EReference getRessourceUsed_Ressources();
+  EReference getRessourceUsed_RessourceUsed();
 
   /**
    * Returns the meta object for enum '{@link fr.n7.pDL1.WorkSequenceType <em>Work Sequence Type</em>}'.
@@ -598,6 +598,14 @@ public interface PDL1Package extends EPackage
      * @generated
      */
     EAttribute WORK_DEFINITION__NAME = eINSTANCE.getWorkDefinition_Name();
+
+    /**
+     * The meta object literal for the '<em><b>Ressources Used</b></em>' containment reference list feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EReference WORK_DEFINITION__RESSOURCES_USED = eINSTANCE.getWorkDefinition_RessourcesUsed();
 
     /**
      * The meta object literal for the '{@link fr.n7.pDL1.impl.WorkSequenceImpl <em>Work Sequence</em>}' class.
@@ -688,14 +696,6 @@ public interface PDL1Package extends EPackage
     EClass RESSOURCE_USED = eINSTANCE.getRessourceUsed();
 
     /**
-     * The meta object literal for the '<em><b>Workdefinition</b></em>' reference feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EReference RESSOURCE_USED__WORKDEFINITION = eINSTANCE.getRessourceUsed_Workdefinition();
-
-    /**
      * The meta object literal for the '<em><b>Occ</b></em>' attribute feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -704,12 +704,12 @@ public interface PDL1Package extends EPackage
     EAttribute RESSOURCE_USED__OCC = eINSTANCE.getRessourceUsed_Occ();
 
     /**
-     * The meta object literal for the '<em><b>Ressources</b></em>' reference feature.
+     * The meta object literal for the '<em><b>Ressource Used</b></em>' reference feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EReference RESSOURCE_USED__RESSOURCES = eINSTANCE.getRessourceUsed_Ressources();
+    EReference RESSOURCE_USED__RESSOURCE_USED = eINSTANCE.getRessourceUsed_RessourceUsed();
 
     /**
      * The meta object literal for the '{@link fr.n7.pDL1.WorkSequenceType <em>Work Sequence Type</em>}' enum.

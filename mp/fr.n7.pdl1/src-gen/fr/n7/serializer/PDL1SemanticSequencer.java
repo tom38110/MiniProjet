@@ -92,14 +92,22 @@ public class PDL1SemanticSequencer extends AbstractDelegatingSemanticSequencer {
 	
 	/**
 	 * Contexts:
-	 *     ProcessElement returns RessourceUsed
 	 *     RessourceUsed returns RessourceUsed
 	 *
 	 * Constraint:
-	 *     (workdefinition=[WorkDefinition|ID] (occ=INT ressources=[Ressource|ID])+)
+	 *     (occ=INT ressourceUsed=[Ressource|ID])
 	 */
 	protected void sequence_RessourceUsed(ISerializationContext context, RessourceUsed semanticObject) {
-		genericSequencer.createSequence(context, semanticObject);
+		if (errorAcceptor != null) {
+			if (transientValues.isValueTransient(semanticObject, PDL1Package.Literals.RESSOURCE_USED__OCC) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, PDL1Package.Literals.RESSOURCE_USED__OCC));
+			if (transientValues.isValueTransient(semanticObject, PDL1Package.Literals.RESSOURCE_USED__RESSOURCE_USED) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, PDL1Package.Literals.RESSOURCE_USED__RESSOURCE_USED));
+		}
+		SequenceFeeder feeder = createSequencerFeeder(context, semanticObject);
+		feeder.accept(grammarAccess.getRessourceUsedAccess().getOccINTTerminalRuleCall_0_0(), semanticObject.getOcc());
+		feeder.accept(grammarAccess.getRessourceUsedAccess().getRessourceUsedRessourceIDTerminalRuleCall_1_0_1(), semanticObject.eGet(PDL1Package.Literals.RESSOURCE_USED__RESSOURCE_USED, false));
+		feeder.finish();
 	}
 	
 	
@@ -131,16 +139,10 @@ public class PDL1SemanticSequencer extends AbstractDelegatingSemanticSequencer {
 	 *     WorkDefinition returns WorkDefinition
 	 *
 	 * Constraint:
-	 *     name=ID
+	 *     (name=ID ressourcesUsed+=RessourceUsed*)
 	 */
 	protected void sequence_WorkDefinition(ISerializationContext context, WorkDefinition semanticObject) {
-		if (errorAcceptor != null) {
-			if (transientValues.isValueTransient(semanticObject, PDL1Package.Literals.WORK_DEFINITION__NAME) == ValueTransient.YES)
-				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, PDL1Package.Literals.WORK_DEFINITION__NAME));
-		}
-		SequenceFeeder feeder = createSequencerFeeder(context, semanticObject);
-		feeder.accept(grammarAccess.getWorkDefinitionAccess().getNameIDTerminalRuleCall_1_0(), semanticObject.getName());
-		feeder.finish();
+		genericSequencer.createSequence(context, semanticObject);
 	}
 	
 	

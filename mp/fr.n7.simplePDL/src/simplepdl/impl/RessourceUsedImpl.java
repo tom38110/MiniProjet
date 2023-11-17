@@ -4,12 +4,14 @@ package simplepdl.impl;
 
 import org.eclipse.emf.common.notify.Notification;
 
+import org.eclipse.emf.common.notify.NotificationChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
+import org.eclipse.emf.ecore.util.EcoreUtil;
 import simplepdl.Ressource;
 import simplepdl.RessourceUsed;
 import simplepdl.SimplepdlPackage;
@@ -60,16 +62,6 @@ public class RessourceUsedImpl extends MinimalEObjectImpl.Container implements R
 	 * @ordered
 	 */
 	protected Ressource ressources;
-
-	/**
-	 * The cached value of the '{@link #getWorkdefinition() <em>Workdefinition</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getWorkdefinition()
-	 * @generated
-	 * @ordered
-	 */
-	protected WorkDefinition workdefinition;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -155,15 +147,8 @@ public class RessourceUsedImpl extends MinimalEObjectImpl.Container implements R
 	 * @generated
 	 */
 	public WorkDefinition getWorkdefinition() {
-		if (workdefinition != null && workdefinition.eIsProxy()) {
-			InternalEObject oldWorkdefinition = (InternalEObject)workdefinition;
-			workdefinition = (WorkDefinition)eResolveProxy(oldWorkdefinition);
-			if (workdefinition != oldWorkdefinition) {
-				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, SimplepdlPackage.RESSOURCE_USED__WORKDEFINITION, oldWorkdefinition, workdefinition));
-			}
-		}
-		return workdefinition;
+		if (eContainerFeatureID() != SimplepdlPackage.RESSOURCE_USED__WORKDEFINITION) return null;
+		return (WorkDefinition)eInternalContainer();
 	}
 
 	/**
@@ -171,8 +156,9 @@ public class RessourceUsedImpl extends MinimalEObjectImpl.Container implements R
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public WorkDefinition basicGetWorkdefinition() {
-		return workdefinition;
+	public NotificationChain basicSetWorkdefinition(WorkDefinition newWorkdefinition, NotificationChain msgs) {
+		msgs = eBasicSetContainer((InternalEObject)newWorkdefinition, SimplepdlPackage.RESSOURCE_USED__WORKDEFINITION, msgs);
+		return msgs;
 	}
 
 	/**
@@ -181,10 +167,63 @@ public class RessourceUsedImpl extends MinimalEObjectImpl.Container implements R
 	 * @generated
 	 */
 	public void setWorkdefinition(WorkDefinition newWorkdefinition) {
-		WorkDefinition oldWorkdefinition = workdefinition;
-		workdefinition = newWorkdefinition;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, SimplepdlPackage.RESSOURCE_USED__WORKDEFINITION, oldWorkdefinition, workdefinition));
+		if (newWorkdefinition != eInternalContainer() || (eContainerFeatureID() != SimplepdlPackage.RESSOURCE_USED__WORKDEFINITION && newWorkdefinition != null)) {
+			if (EcoreUtil.isAncestor(this, newWorkdefinition))
+				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
+			NotificationChain msgs = null;
+			if (eInternalContainer() != null)
+				msgs = eBasicRemoveFromContainer(msgs);
+			if (newWorkdefinition != null)
+				msgs = ((InternalEObject)newWorkdefinition).eInverseAdd(this, SimplepdlPackage.WORK_DEFINITION__RESSOURCES_USED, WorkDefinition.class, msgs);
+			msgs = basicSetWorkdefinition(newWorkdefinition, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, SimplepdlPackage.RESSOURCE_USED__WORKDEFINITION, newWorkdefinition, newWorkdefinition));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+			case SimplepdlPackage.RESSOURCE_USED__WORKDEFINITION:
+				if (eInternalContainer() != null)
+					msgs = eBasicRemoveFromContainer(msgs);
+				return basicSetWorkdefinition((WorkDefinition)otherEnd, msgs);
+		}
+		return super.eInverseAdd(otherEnd, featureID, msgs);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+			case SimplepdlPackage.RESSOURCE_USED__WORKDEFINITION:
+				return basicSetWorkdefinition(null, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NotificationChain eBasicRemoveFromContainerFeature(NotificationChain msgs) {
+		switch (eContainerFeatureID()) {
+			case SimplepdlPackage.RESSOURCE_USED__WORKDEFINITION:
+				return eInternalContainer().eInverseRemove(this, SimplepdlPackage.WORK_DEFINITION__RESSOURCES_USED, WorkDefinition.class, msgs);
+		}
+		return super.eBasicRemoveFromContainerFeature(msgs);
 	}
 
 	/**
@@ -201,8 +240,7 @@ public class RessourceUsedImpl extends MinimalEObjectImpl.Container implements R
 				if (resolve) return getRessources();
 				return basicGetRessources();
 			case SimplepdlPackage.RESSOURCE_USED__WORKDEFINITION:
-				if (resolve) return getWorkdefinition();
-				return basicGetWorkdefinition();
+				return getWorkdefinition();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -262,7 +300,7 @@ public class RessourceUsedImpl extends MinimalEObjectImpl.Container implements R
 			case SimplepdlPackage.RESSOURCE_USED__RESSOURCES:
 				return ressources != null;
 			case SimplepdlPackage.RESSOURCE_USED__WORKDEFINITION:
-				return workdefinition != null;
+				return getWorkdefinition() != null;
 		}
 		return super.eIsSet(featureID);
 	}

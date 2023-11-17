@@ -77,11 +77,13 @@ public interface WorkDefinition extends ProcessElement {
 	/**
 	 * Returns the value of the '<em><b>Ressources Used</b></em>' containment reference list.
 	 * The list contents are of type {@link simplepdl.RessourceUsed}.
+	 * It is bidirectional and its opposite is '{@link simplepdl.RessourceUsed#getWorkdefinition <em>Workdefinition</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Ressources Used</em>' containment reference list.
 	 * @see simplepdl.SimplepdlPackage#getWorkDefinition_RessourcesUsed()
-	 * @model containment="true"
+	 * @see simplepdl.RessourceUsed#getWorkdefinition
+	 * @model opposite="workdefinition" containment="true"
 	 * @generated
 	 */
 	EList<RessourceUsed> getRessourcesUsed();

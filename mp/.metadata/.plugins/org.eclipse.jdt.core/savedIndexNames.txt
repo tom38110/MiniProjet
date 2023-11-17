@@ -16,7 +16,6 @@ INDEX VERSION 1.131+/home/taudard/IDM/MiniProjet/mp/.metadata/.plugins/org.eclip
 2574233358.index
 972949692.index
 870911012.index
-649822626.index
 2979562625.index
 69115327.index
 1333096364.index
@@ -45,7 +44,6 @@ INDEX VERSION 1.131+/home/taudard/IDM/MiniProjet/mp/.metadata/.plugins/org.eclip
 1158197951.index
 594756272.index
 2682449071.index
-124733140.index
 1027991553.index
 2382583475.index
 1366149182.index
@@ -70,10 +68,8 @@ INDEX VERSION 1.131+/home/taudard/IDM/MiniProjet/mp/.metadata/.plugins/org.eclip
 4209134590.index
 2934523174.index
 3952712414.index
-646308851.index
 764202902.index
 1394413366.index
-4270576026.index
 1632731500.index
 4129874615.index
 510808862.index
